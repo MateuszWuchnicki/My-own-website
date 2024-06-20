@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Wuchnicki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="languages-links">
+        <a href="#PL" class="active"><img src="assets/images/icons/pl.png" alt="PL-pic"></a>
+        <a href="#ENG"><img src="assets/images/icons/eng.png" alt="ENG-pic"></a>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="assets/images/photos/profile_photo.JPEG" alt="Profile Picture">
+            </div>
+            <nav class="menu">
+                <ul class="image-list">
+                    <li>
+                        <img src="assets/images/icons/home.png" alt="home-pic">
+                        <a href="index.html" >Start</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/profile.png" alt="about-pic">
+                        <a href="about.html">O mnie</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/cv.png" alt="resume-pic">
+                        <a href="resume.html" >Życiorys</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/skill-development.png" alt="skills-pic">
+                        <a href="skill.html">Umiejętności</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/web-development.png" alt="portfolio-pic">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/feedback.png" alt="testimonial-pic">
+                        <a href="testimonial.html">Referencje</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/icons/contact-us.png" alt="contact-pic">
+                        <a href="contact.html" class="active">Kontact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/MateuszWuchnicki?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/icons/github.png" alt="github-pic">
+                </a>
+                <a href="linkedin.com/in/mateusz-wuchnicki" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/icons/linkedin.png" alt="linkedin-pic">
+                </a>
+                <a href="https://www.instagram.com/matt_wuc_/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/icons/instagram.png" alt="instagram-pic">
+                </a>
+            </div>
+        </aside>
+        <main class="contact-container">
+            <section class="contact-section">
+                <div class="row">
+                    <div class="column-full">
+                        <h2><span>Kontakt</span></h2>
+                        <div class="contact-inline-list-container">
+                            <ul class="contact-inline-list">
+                                <li>
+                                    <h2>„Kto mówi - sieje, kto słucha - zbiera.”</h2>
+                                </li>
+                                <li>
+                                    <p>- Pitagoras</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-header-container">
+                            <h1>Skontaktuj się ze mną telefonicznie <br>lub poprzez formularz poniżej</h1>
+                        </div>
+
+                        <div class="contact-element-container">
+                            <div class="contact-element-inline-list">
+                                <div class='left element-in-list'>
+                                    <div class="form-info">
+                                        <img src="assets/images/icons/phone-call.png" alt="Phone-call">
+                                        <div class="form-info-text">
+                                            <h1>Zadzwoń do mnie</h1>
+                                            <h2>+48 574 270 864</h2>
+                                        </div>
+                                    </div>
+                                    <div class="form-info">
+                                        <img src="assets/images/icons/email.png" alt="Email">
+                                        <div class="form-info-text">
+                                            <h1>Napisz do mnie</h1>
+                                            <h2>mateusz.wuchnicki@gmail.com</h2>
+                                        </div>
+                                    </div>
+                                    <div class="form-info">
+                                        <img src="assets/images/icons/map-pin.png" alt="Map-pin">
+                                        <div class="form-info-text">
+                                            <h1>Adres</h1>
+                                            <h2>Kraków, Polska</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='right element-in-list'>
+                                    <form action="#" method="POST">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="text" id="name" name="name" placeholder="Twoje Imię*" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" id="email" name="email" placeholder="Twój adres E-mail*" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" id="phone" name="phone" placeholder="Twój telefon">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="subject" name="subject" placeholder="Tytuł wiadomości*" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="message" name="message" placeholder="Treść wiadomości*" required></textarea>
+                                        </div>
+                                        <div class="form-group form-button">
+                                            <button type="submit">Wyślij wiadomość</button>
+                                            <p>Pole oznaczone * są wymagane</p>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-full-map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 by Mateusz Wuchnicki. All rights reserved.</p>
+    </footer>
+
+<!--    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>-->
+
+    <script src="assets/scripts/map.js"></script>
+</body>
+
+</html>
