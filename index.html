@@ -26,8 +26,8 @@
        })();
     </script>
 <!--     <script type="module" src="assets/scripts/email.js"></script>-->
-    <script defer src="assets/scripts/email.js"></script> 
-
+<!--     <script defer src="assets/scripts/email.js"></script> 
+ -->
 </head>
 
 <body>
@@ -2050,6 +2050,39 @@
     <!-- Hover -->
     <script src="assets/scripts/hover.js"></script>
 
+    <script>
+        const form = document.querySelector('form');
+        const nameImput = document.getElementById("name");
+        const emailImput = document.getElementById("email");
+        const messageImput = document.getElementById("message");
+
+        const serviceID = 'service_paccnmf';
+        const templateID = 'template_i6gg27k';
+        const publicKey = 'ptNCneXPkerPcOMwE';
+
+        emailjs.init(publicKey);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inputData = {
+                name: nameImput.value,
+                user_email: emailImput.value,
+                message: messageImput.value,
+            };
+            emailjs.send(serviceID, templateID, inputData).then(
+                () => {
+                    nameImput.value = '';
+                    emailImput.value = '';
+                    messageImput.value = '';
+                    console.log("Wiadomość została wysłana!");
+                },
+                (error) => {
+                    console.log("Error!", error);
+                }
+            );
+        });
+    </script>
+    
 </body>
 
 </html>
