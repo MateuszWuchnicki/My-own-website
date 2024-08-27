@@ -242,7 +242,18 @@ img {
     background-color: #c32413;
 }
 
+.cv-button-home .button-text {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
 
+.cv-button-home .version {
+    font-size: 0.7em;
+    color: #fff;
+    margin: 0;
+    margin: 3px 0 0 0;
+}
 
 /* ----------- Content section  ------------ */
 
