@@ -1,24 +1,10 @@
-// function sendEmail(event) {
-//     event.preventDefault(); // Zapobiega przeładowaniu strony
-
-//     emailjs.sendForm('service_paccnmf', 'template_pqb568o', event.target, 'ptNCneXPkerPcOMwE')
-//     .then((result) => {
-//         alert("Wiadomość wysłana!");
-//     }, (error) => {
-//         alert("Błąd: " + error.text);
-//     });
-// }
-
-
-function sendEmail(event) {
-    event.preventDefault(); // Zapobiega przeładowaniu strony
-
-    emailjs.sendForm('service_paccnmf', 'template_pqb568o', event.target, 'ptNCneXPkerPcOMwE')
-    .then((result) => {
-        alert("Wiadomość została wysłana!");
-        console.log(result.text); // Dla debugowania
-    }, (error) => {
-        alert("Błąd: " + error.text);
-        console.error(error); // Dla debugowania
-    });
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    }
+    
+    emailjs.sand('service_paccnmf', 'template_pqb568o', parms).then(alert("Wiadomość została wysłana!"))
 }
