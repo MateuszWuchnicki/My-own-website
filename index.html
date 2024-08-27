@@ -2074,10 +2074,10 @@
                     nameImput.value = '';
                     emailImput.value = '';
                     messageImput.value = '';
-                    console.log("Wiadomość została wysłana!");
+                    alert("Wiadomość została wysłana!");
                 },
-                (error) => {
-                    console.log("Error!", error);
+                (error)=> {
+                    alert("Wysyłanie wiadomości nie powiodło się!");
                 }
             );
         });
