@@ -16,13 +16,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/swiper.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init({
-                publicKey: "ptNCneXPkerPcOMwE",
-            });
+            emailjs.init('ptNCneXPkerPcOMwE'); // Zamień na swoje USER_ID z EmailJS
         })();
     </script>
     <script type="module" src="assets/scripts/email.js"></script>
