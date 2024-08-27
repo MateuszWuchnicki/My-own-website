@@ -215,6 +215,8 @@ img {
     margin-top: 25px;
     width: 200px;
     height: 50px;
+    displey: grid;
+    align-content: center;
 }
 
 .cv-button-home:hover {
