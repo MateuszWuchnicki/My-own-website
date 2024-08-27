@@ -30,7 +30,7 @@ form.addEventListener('submit', (e) => {
         user_email:emailImput.value,
         message:messageImput.value,
     };
-    emailjs.sand(serviceID, templateID, inputData).then(
+    emailjs.send(serviceID, templateID, inputData).then(
         () => {
             nameImput.value = '';
             emailImput.value = '';
