@@ -17,12 +17,17 @@
     <link rel="stylesheet" href="css/swiper.css">
 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<!--
+    
     <script type="text/javascript">
         (function() {
             emailjs.init('ptNCneXPkerPcOMwE'); // Zamień na swoje USER_ID z EmailJS
         })();
     </script>
-    <script type="module" src="assets/scripts/email.js"></script>
+-->
+<!--     <script type="module" src="assets/scripts/email.js"></script>-->
+    <script defer src="assets/scripts/email.js"></script> 
+
 </head>
 
 <body>
@@ -1999,7 +2004,7 @@
                                     <textarea id="message" name="message" placeholder="Treść wiadomości*" required></textarea>
                                 </div>
                                 <div class="form-element">
-                                    <button type="submit" onclick="sendMail()">Wyślij wiadomość</button>
+                                    <button type="submit">Wyślij wiadomość</button>  <!-- onclick="sendMail()" -->
                                 </div>
                                 <div class="form-element">
                                     <p>Pole oznaczone * są wymagane</p>
