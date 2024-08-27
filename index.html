@@ -2054,11 +2054,14 @@
         const form = document.querySelector('form');
         const nameImput = document.getElementById("name");
         const emailImput = document.getElementById("email");
+        const phoneImput = document.getElementById("phone");
+        const subjectImput = document.getElementById("subject");
         const messageImput = document.getElementById("message");
 
         const serviceID = 'service_paccnmf';
         const templateID = 'template_i6gg27k';
         const publicKey = 'ptNCneXPkerPcOMwE';
+
 
         emailjs.init(publicKey);
 
@@ -2067,16 +2070,20 @@
             const inputData = {
                 name: nameImput.value,
                 user_email: emailImput.value,
-                message: messageImput.value,
+                phone: phoneImput.value,
+                subject: subjectImput.value,
+                message: messageImput.value
             };
             emailjs.send(serviceID, templateID, inputData).then(
                 () => {
                     nameImput.value = '';
                     emailImput.value = '';
+                    phoneImput.value = '';
+                    subjectImput.value = '';
                     messageImput.value = '';
                     alert("Wiadomość została wysłana!");
                 },
-                (error)=> {
+                (error) => {
                     alert("Wysyłanie wiadomości nie powiodło się!");
                 }
             );
