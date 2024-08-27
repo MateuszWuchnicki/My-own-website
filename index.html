@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="css/swiper.css">
 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<!--
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init('ptNCneXPkerPcOMwE'); // Zamień na swoje USER_ID z EmailJS
-        })();
+       (function(){
+          emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY",
+          });
+       })();
     </script>
--->
 <!--     <script type="module" src="assets/scripts/email.js"></script>-->
     <script defer src="assets/scripts/email.js"></script> 
 
