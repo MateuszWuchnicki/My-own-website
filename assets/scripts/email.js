@@ -1,12 +1,10 @@
-//import emailjs from 'emailjs-com';
+function sendEmail(event) {
+    event.preventDefault(); // Zapobiega przeładowaniu strony
 
-function sendEmail(e) {
-  e.preventDefault();
-
-  emailjs.sendForm('service_paccnmf', 'template_pqb568o', e.target, 'ptNCneXPkerPcOMwE')
+    emailjs.sendForm('service_paccnmf', 'template_pqb568o', event.target, 'ptNCneXPkerPcOMwE')
     .then((result) => {
-        console.log(result.text);
+        alert("Wiadomość wysłana!");
     }, (error) => {
-        console.log(error.text);
+        alert("Błąd: " + error.text);
     });
 }
