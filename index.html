@@ -7,31 +7,30 @@
     <title>Mateusz Wuchnicki</title>
 
     <link rel="icon" href="favicon.ico">
-    
-<!--     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/site.webmanifest">
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> -->
-    
+    <meta name="theme-color" content="#ffffff">
+-->
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/swiper.css">
 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!--
+    
     <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "ptNCneXPkerPcOMwE",
-          });
-       })();
+        (function() {
+            emailjs.init('ptNCneXPkerPcOMwE'); // Zamień na swoje USER_ID z EmailJS
+        })();
     </script>
-<!--     <script type="module" src="assets/scripts/email.js"></script>-->
-<!--     <script defer src="assets/scripts/email.js"></script> 
- -->
+-->
+    <script defer src="assets/scripts/email.js"></script>
 </head>
 
 <body>
@@ -223,10 +222,10 @@
 
                     <div class="project-description project-ownweb">
                         <h2>Opis projektu</h2>
-                        <p>Pomysł utworzenia własnej strony internetowej w stylu portfolio narodził się już dawno temu. Impulsem do działania była m.in. chęć podzielenia się z innymi osobami samodzielnie zrealizowanymi projektami z różnych kategorii. Z uwagi na to, że ciężko jest przedstawić swoje dokonania na kartce papieru w formacie A4, postanowiłem zbudować tę stronę. Jest ona swego rodzaju rozbudowanym interaktywnym życiorysem, w którym umieściłem informacje o sobie, swoje doświadczenie zawodowe i wykształcenie, a także projekty wraz z odnośnikami do ich kodu źródłowego.</p>
-                        <p>Planuję stale aktualizować wszystkie informacje jakie się tutaj znajdują oraz dodawać nowe projekty zarówno ukończone jak i w trakcie realizacji.</p>
-                        <p>Niedługo na stronie pojawi się nowa funkcjonalność, mianowicie możliwość uruchomienia strony w wersji języku angielskim. W przyszłości możliwe, że pojawi się nowa pozycja w menu – <span>Blog</span>, w którym będę umieszczał ciekawe nowinki z branży GIS oraz Data Science czy też popularnego teraz AI.</p>
-                        <p>Jeśli chcesz się ze mną skontaktować zapraszam do sekcji <span>Kontakt</span>.
+                        <p>Pomysł utworzenia własnej strony internetowej w&nbsp;stylu portfolio narodził&nbsp;się już&nbsp;dawno&nbsp;temu. Impulsem do&nbsp;działania była&nbsp;m.in.&nbsp;chęć podzielenia&nbsp;się z&nbsp;innymi osobami samodzielnie zrealizowanymi projektami z&nbsp;różnych kategorii. Zvuwagi na&nbsp;to, że&nbsp;ciężko jest przedstawić swoje dokonania na&nbsp;kartce papieru w&nbsp;formacie&nbsp;A4, postanowiłem zbudować tę stronę. Jest ona swego rodzaju rozbudowanym interaktywnym życiorysem, w&nbsp;którym umieściłem informacje o&nbsp;sobie, swoje doświadczenie zawodowe i&nbsp;wykształcenie, a&nbsp;także projekty wraz&nbsp;z&nbsp;odnośnikami do&nbsp;ich kodu źródłowego.</p>
+                        <p>Strona jest responsywna. Starałem&nbsp;się przygotować&nbsp;ją tak&nbsp;aby prawidłowo uruchamiała&nbsp;się na&nbsp;każdym urządzeniu. Planuję ją&nbsp;stale aktualizować wszystkie informacje jakie&nbsp;się tutaj znajdują oraz&nbsp;dodawać nowe projekty zarówno ukończone jak&nbsp;i w&nbsp;trakcie realizacji.</p>
+                        <p>Niedługo na stronie pojawi&nbsp;się nowa funkcjonalność, mianowicie możliwość uruchomienia strony w&nbsp;wersji języku angielskim. W&nbsp;przyszłości możliwe, że&nbsp;pojawi&nbsp;się nowa pozycja w&nbsp;menu – <span>Blog</span>, w&nbsp;którym będę umieszczał ciekawe nowinki z&nbsp;branży GIS oraz&nbsp;Data Science czy&nbsp;też&nbsp;popularnego teraz AI.</p>
+                        <p>Jeśli chcesz&nbsp;się ze&nbsp;mną skontaktować zapraszam do&nbsp;sekcji <span>Kontakt</span>.
                         </p>
                     </div>
                     <div class="project-other-images-project1">
@@ -312,7 +311,7 @@
                             </div>
 
                             <button class="cv-button-project detail-item-center">
-                                <p><a href="">Zobacz projekt</a></p>
+                                <p><a href="" target="_blank" rel="noopener noreferrer">Zobacz projekt</a></p>
                                 <img src="assets/icons/open_in_new2_w.png" alt="open">
                             </button>
                         </div>
@@ -324,7 +323,7 @@
                         <p>Klasyfikacja psów i kotów to jeden ze standardowych projektów głębokiego uczenia z zakresu widzenia komputerowego, który obejmuje klasyfikację realistycznych zdjęć na dwie kategorie.W trakcie realizacji projektu musiałem najpierw załadować i przygotować obrazy do celów treningowych, następnie rozdzielić zdjęcia na dane do celu szkolenia i walidacji. Kolejno, użyć ImageDataGenerator, aby rozszerzyć swój zbiór danych i ograniczyć nadmierne dopasowanie, opracować model CNN za pomocą biblioteki KARES i wybrać parametry aby poprawić wydajność modelu, ocenić wydajność modelu, zapisać i załadować model do dalszych prognoz, a na koniec dokonać klasyfikacji na własnych zwierzakach.</p>
                         <p>Do realizacji projektu wykorzystałem zbiór danych obejmujący łącznie 25000 zdjęć przedstawiających psy i koty. Ten zbiór danych został po raz pierwszy wprowadzony na potrzeby konkursu Kaggle w 2013 roku.</p>
                         <p>Zbiór danych jest dostępny
-                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data">tutaj</a> (około 865 MB).
+                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data" target="_blank" rel="noopener noreferrer">tutaj</a> (około 865 MB).
                         </p>
                         <img src="assets/images/model1.png" alt="model" class="project-dogcat-image1">
                         <ul class="project-dogcat-list">
@@ -442,7 +441,7 @@
                         <ul class="project-wedding-list">
                             <li>Tło użyte w projekcie - pastelowy las:
                                 <ul class="project-wedding-list2">
-                                    <li>Autor: <a href="https://pl.freepik.com/autor/pickoloh"> pickoloh </a> | Portal: <a href="https://www.freepik.com"> www.freepik.com</a></li>
+                                    <li>Autor: <a href="https://pl.freepik.com/autor/pickoloh" target="_blank" rel="noopener noreferrer"> pickoloh </a> | Portal: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer"> www.freepik.com</a></li>
                                 </ul>
                             </li>
                             <li>Ikony użyte w projekcie:
@@ -452,8 +451,8 @@
                             </li>
                             <li>Czcionka użyta w projekcie:
                                 <ul class="project-wedding-list2">
-                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Great+Vibes">Great Vibes</a></li>
-                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Literata">Literata</a></li>
+                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Great+Vibes" target="_blank" rel="noopener noreferrer">Great Vibes</a></li>
+                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Literata" target="_blank" rel="noopener noreferrer">Literata</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -548,7 +547,7 @@
                         <ul class="project-wedding-list">
                             <li>Tło użyte w projekcie - ramka oraz kwiaty:
                                 <ul class="project-wedding-list2">
-                                    <li>Autor: <a href="https://it.freepik.com/autore/dede-sumiarsih">dede-sumiarsih</a> | Portal: <a href="https://www.freepik.com"> www.freepik.com</a></li>
+                                    <li>Autor: <a href="https://it.freepik.com/autore/dede-sumiarsih" target="_blank" rel="noopener noreferrer">dede-sumiarsih</a> | Portal: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer"> www.freepik.com</a></li>
                                 </ul>
                             </li>
                             <li>Ikony użyte w projekcie:
@@ -558,8 +557,8 @@
                             </li>
                             <li>Czcionka użyta w projekcie:
                                 <ul class="project-wedding-list2">
-                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Great+Vibes">Great Vibes</a></li>
-                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Literata">Literata</a></li>
+                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Great+Vibes" target="_blank" rel="noopener noreferrer">Great Vibes</a></li>
+                                    <li>Google Fonts: <a href="https://fonts.google.com/specimen/Literata" target="_blank" rel="noopener noreferrer">Literata</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -623,7 +622,7 @@
                                     </div>
                                     <div class="info-element info-category">Dane z:</div>
                                     <div class="info-element info-text">
-                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html">
+                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html" target="_blank" rel="noopener noreferrer">
                                             www.cdc.gov
                                         </a>
                                     </div>
@@ -645,7 +644,7 @@
                             </div>
 
                             <button class="cv-button-project detail-item-center">
-                                <p><a href="https://github.com/MateuszWuchnicki/Diabetes-prediction-and-risk-factors-evaluation/blob/main/diabete_final.ipynb">Zobacz projekt</a></p>
+                                <p><a href="https://github.com/MateuszWuchnicki/Diabetes-prediction-and-risk-factors-evaluation/blob/main/diabete_final.ipynb" target="_blank" rel="noopener noreferrer">Zobacz projekt</a></p>
                                 <img src="assets/icons/open_in_new2_w.png" alt="open">
                             </button>
                         </div>
@@ -658,7 +657,7 @@
                         <p>Chociaż cukrzycy nie da się wyleczyć, strategie takie jak utrata wagi, zdrowe odżywianie, aktywność fizyczna oraz leczenie farmakologiczne mogą złagodzić skutki tej choroby u wielu pacjentów. Wczesna diagnoza może prowadzić do zmian stylu życia i skuteczniejszego leczenia, co sprawia, że modele predykcyjne oceny ryzyka cukrzycy są ważnym narzędziem dla lekarzy i urzędników zdrowia publicznego.</p>
                         <p class="paragraf-header">Opis zbioru danych użytego w projekcie:</p>
                         <p>System Monitorowania Czynników Ryzyka Zachowań Zdrowotnych (BRFSS) to coroczna ankieta telefoniczna dotycząca zdrowia, zbierana przez CDC. Każdego roku ankieta gromadzi odpowiedzi od ponad 400 000 Amerykanów we wszystkich 50 stanach na temat ryzykownych zachowań zdrowotnych, przewlekłych schorzeń oraz korzystania z usług profilaktycznych. BRFSS jest prowadzony nieprzerwanie od 1984 roku, co czyni go największym nieprzerwanie prowadzonym systemem ankiet zdrowotnych na świecie.</p>
-                        <p>W ramach tego projektu użyto pliku w formacie SAS z danymi dostępnymi na stronie CDC dla roku 2019. Oryginalny zbiór danych zawiera odpowiedzi od 418268 osób i składa się z 342 cech. Te cechy to pytania bezpośrednio zadawane uczestnikom lub zmienne obliczone na podstawie indywidualnych odpowiedzi uczestników.<a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html">Link do danych</a></p>
+                        <p>W ramach tego projektu użyto pliku w formacie SAS z danymi dostępnymi na stronie CDC dla roku 2019. Oryginalny zbiór danych zawiera odpowiedzi od 418268 osób i składa się z 342 cech. Te cechy to pytania bezpośrednio zadawane uczestnikom lub zmienne obliczone na podstawie indywidualnych odpowiedzi uczestników.<a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html" target="_blank" rel="noopener noreferrer">Link do danych</a></p>
                         <p>Na potrzeby tej analizy tylko spośród wszystkich cech uwzględnione zostały tylko te czynniki, które są związane z czynnikami ryzyka cukrzycy. W wyborze odpowiednich cech bardzo pomocna była praca badawcza autorstwa Zidian Xie pt. „Building Risk Prediction Models for Type 2 Diabetes Using Machine Learning Techniques” z 2014 roku.</p>
                         <p class="paragraf-header">Cel projektu:</p>
                         <p>Głównym celem tego projektu jest odpowiedź na pytanie:</p>
@@ -728,7 +727,7 @@
                                     </div>
                                     <div class="info-element info-category">Dane z:</div>
                                     <div class="info-element info-text">
-                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html">
+                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html" target="_blank" rel="noopener noreferrer">
                                             www.kaggle.gov
                                         </a>
                                     </div>
@@ -814,7 +813,7 @@
                                     </div>
                                     <div class="info-element info-category">Dane z:</div>
                                     <div class="info-element info-text">
-                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html">
+                                        <a href="https://www.cdc.gov/brfss/annual_data/annual_2019.html" target="_blank" rel="noopener noreferrer">
                                             www.kaggle.gov
                                         </a>
                                     </div>
@@ -862,7 +861,7 @@
                             <button class="arrow-button" data-modal="designModal7">
                                 <img src="assets/icons/arrow_left.png" alt="Wyjdź" class="hover-image" data-hover="assets/icons/arrow_left_hover.png">
                             </button>
-                            <button class="arrow-button" data-modal="designModal1">
+                            <button class="arrow-button" data-modal="designModal9">
                                 <img src="assets/icons/arrow_right.png" alt="Wyjdź" class="hover-image" data-hover="assets/icons/arrow_right_hover.png">
                             </button>
                             <button class="close-button" data-close="designModal8">
@@ -873,7 +872,7 @@
 
                     <div class="project-details">
                         <div class="project-main-image project-details-item">
-                            <img src="assets/images/portfolio8.png" alt="project2">
+                            <img src="assets/images/portfolio8.png" alt="project8">
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
@@ -935,6 +934,128 @@
                 </div>
             </div>
 
+            <!-- -------------------------------- PROJEKT 9 -------------------------------- -->
+
+            <div id="designModal9" class="modal">
+                <div class="modal-content">
+
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h1>Narzędzie partycymacyjne - geoankieta</h1>
+                        </div>
+                        <div class="project-header-item">
+                            <button class="arrow-button" data-modal="designModal8">
+                                <img src="assets/icons/arrow_left.png" alt="Wyjdź" class="hover-image" data-hover="assets/icons/arrow_left_hover.png">
+                            </button>
+                            <button class="arrow-button" data-modal="designModal1">
+                                <img src="assets/icons/arrow_right.png" alt="Wyjdź" class="hover-image" data-hover="assets/icons/arrow_right_hover.png">
+                            </button>
+                            <button class="close-button" data-close="designModal9">
+                                <img src="assets/icons/close.png" alt="Wyjdź" class="hover-image" data-hover="assets/icons/close_hover.png">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-main-image project-details-item">
+                            <img src="assets/images/portfolio9.jpg" alt="project9">
+                        </div>
+                        <div class="details-item project-details-item">
+                            <div class="details-header detail-item-center">
+                                <h2>Szczegóły projektu</h2>
+                            </div>
+
+                            <div class="list-information detail-item-center">
+                                <div class="info-item">
+                                    <div class="info-element">
+                                        <img src="assets/icons/idea.png" alt="Kategoria">
+                                    </div>
+                                    <div class="info-element info-category">Kategoria:</div>
+                                    <div class="info-element info-text">Projekty GIS, Front-End web development</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-element">
+                                        <img src="assets/icons/schedule.png" alt="Kalendarz">
+                                    </div>
+                                    <div class="info-element info-category">Data:</div>
+                                    <div class="info-element info-text">Luty 2016</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-element">
+                                        <img src="assets/icons/design.png" alt="Pobierane">
+                                    </div>
+                                    <div class="info-element info-category">Design:</div>
+                                    <div class="info-element info-text">Mateusz Wuchnicki</div>
+                                </div>
+                            </div>
+
+                            <div class="details-header detail-item-center">
+                                <h2>Technologia</h2>
+                            </div>
+
+                            <div class="list-technologies detail-item-center">
+                                <div class="tech-element">PHP</div>
+                                <div class="tech-element">JavaScript</div>
+                                <div class="tech-element">HTML</div>
+                                <div class="tech-element">CSS</div>
+                                <div class="tech-element">Baza SQL</div>
+                                <div class="tech-element">Adobe XD</div>
+
+                            </div>
+                            <!--                            <div></div>-->
+
+                            <button class="cv-button-project detail-item-center">
+                                <p>Zobacz projekt</p>
+                                <img src="assets/icons/open_in_new2_w.png" alt="open">
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-description project-gis">
+                        <h2>Opis projektu</h2>
+                        <p class="project9-first-paragraf">Prezentowany projekt to moja praca inżynierska pod&nbsp;tytułem „Aplikacja mapowa z&nbsp;funkcjonalnością geo-kwestionariusza – szablon portalu geoinformacyjnego”.
+                        <br><br>
+                        Jest to aplikacja internetowa będąca kreatorem portalu geoinformacyjnego umożliwiająca stworzenie dowolnej ankiety w&nbsp;oparciu o&nbsp;dane przestrzenne z&nbsp;podkładem mapowym. Została ona wykorzystana w&nbsp;projekcie naukowym finansowanym przez&nbsp;Narodowe Centrum Nauki pod&nbsp;tytułem "Partycypacyjny paradygmat planowania przestrzennego - identyfikacja stanu oraz&nbsp;budowa modelu partycypacji w&nbsp;planowaniu przestrzennym w&nbsp;polskim dużym mieście" o&nbsp;numerze: 2014/15/B/HS4/00839 kierowanym przez&nbsp;prof.&nbsp;dr&nbsp;hab&nbsp;Jacka Kotusa.</p>
+                        <img src="assets/images/portfolio9_5.jpg" alt="gis" class="image-item-project9-small left">
+                        <img src="assets/images/portfolio9_1.jpg" alt="gis" class="image-item-project9 right">
+                        <img src="assets/images/portfolio9_2.jpg" alt="gis" class="image-item-project9 left">
+                        <img src="assets/images/portfolio9_3.jpg" alt="gis" class="image-item-project9 right">
+                        <img src="assets/images/portfolio9_4.jpg" alt="gis" class="image-item-project9 left">
+                        <p><span>Generator geoankiety</span></p>
+                        <p class="project9-paragraf-small">Jest to dashboard dla&nbsp;administratora geoankiety. Pozwala stworzyć geoankietę na&nbsp;dowolny temat, w&nbsp;której kluczowym jest zebranie informacji przestrzennej od&nbsp;ankietowanych. Generator pozwala na&nbsp;ustawienie tytuły zamej ankiety. Pozwala utworzyć tekst powitalny i&nbsp;podziękowanie za&nbsp;udział w&nbsp;ankiecie. Administator ma możliwość wyboru ile pytań będzie w&nbsp;geoankiecie oraz&nbsp;jakiego typu będzie odpowiedź. Czy będzie to&nbsp;zaznaczenie punktu / konkretnej lokalizacji za&nbsp;pomocą punktu, czy&nbsp;za&nbsp;pośrednictwem linii łamanej lub&nbsp;obszaru / poligonu, który zarusuje ankietowany. Aby korespondent mógł odróżnić oznaczenia na&nbsp;mapie, administrator może ustawić różny kolor dla&nbsp;poszczególnych pytań. Koleją opcją jest wybranie podkładu mapowego jaki będzie wyświetlał&nbsp;się w&nbsp;ankiecie oraz&nbsp;przybliżenia startowego. Dzięki temu może ograniczyć obszar możliwy do&nbsp;udzielenia odpowiedzi.<br><br>
+                        Po&nbsp;kliknięciu w&nbsp;przycisk <span>GENERUJ GEOANKIETĘ</span> administrator otrzymuje informacje czy&nbsp;wszystkei dane zostały prawidłowo wypełnione oraz&nbsp;odnośnik do&nbsp;gotowej geoankiety.
+                        <br><br>
+                        Cały generator jest połączony z&nbsp;bazą SQL, w&nbsp;której zapisywane są&nbsp;wszystkie ustawienia administratowa.</p>
+                        <p><span>Panel logowania</span></p>
+                        <p class="project9-paragraf">Administrator ma możliwość utworzenia dowolnej liczby kont, które będą miały dostęp do&nbsp;pytań zawartych w&nbsp;geoankiecie. Konta należy utworzyć bezpośrednio w&nbsp;dedykowanej bazie danych SQL. Każdy ankietowany przed przystąpieniem będzie musiał najpierw prowadzić dane do&nbsp;logowania.
+                        <br><br>
+                        Dzięki temu&nbsp;rozwiązaniu administrator geoankiety ma możliwość sprawdzenia odpowiedzi danej osoby.
+                        <br><br>
+                        Jeśli projektankt geoankiety uzna, że&nbsp;odpowiedzi na&nbsp;pytania mają być anonimowe, ma możliwość zrezygnowania z&nbsp;panelu logowania.
+                        </p>
+                        <p><span>Panel powitalny</span></p>
+                        <p class="project9-paragraf">To panel rozpoczynający uczestnictwo w&nbsp;geoankiecie. Korespondent zostaje wprowadzony w&nbsp;tematykę badania w&nbsp;jakim bierze ucział. Tekst powitalny został przygotowany na&nbsp;etapie generowania geoankiety przez administratowa.
+                        <br><br>
+                        Po&nbsp;kliknięciu w&nbsp;przcisk <span>Rozpocznij badanie</span> korespondent zostanie przesiony do&nbsp;przygotowanych pytań. W&nbsp;prawym górnym rogu mamy informację jaka osoba jest zalogowana do&nbsp;geoankiety. Istnieje wórnież możliwość zrezygnowania z&nbsp;udziału poprzez wylogowanie&nbsp;się.
+                        </p>
+                        <p><span>Geoankieta - odpowiadanie na&nbsp;pytania</span></p>
+                        <p class="project9-paragraf">Panele z&nbsp;pokładem mapowym to&nbsp;kluczowe elementy geoankiety. To&nbsp;właśnie tutaj jest możliwość odpowiadania na&nbsp;przygotowane pytania. Liczba etapów generowana automatycznie i&nbsp;jest zależna od&nbsp;liczby przygotowanych pytań. Każdy etap zkłąda się z&nbsp;maksymalnie 2&nbsp;pytań, aby zaznaczenia na&nbsp;mapie były przejrzyste dla&nbsp;korespondenta.
+                        <br><br>
+                        Po&nbsp;udzieleniu odpowiedzi, poprzez zaznaczenie punktu lub&nbsp;narysowanie lini czy&nbsp;obszaru, osoba ma możliwość przejścia dalej aby&nbsp;kontunuować badanie. W&nbsp;każdym momencie może wrócić do&nbsp;porzedniego etapu i&nbsp;zmienić odpowiedź.
+                        </p>
+                        <p><span>Panel końcowy</span></p>
+                        <p class="project9-paragraf">
+                        Panel końcowy to&nbsp;ostatni element geoankiety, w&nbsp;którym użytkownik otrzymuje podziękowanie za&nbsp;udział w przygotowanym badaniu. Tekst tego podziękowania jest możliwy do&nbsp;personalizacji na&nbsp;etapie generatora geoankiety.
+                        <br><br>
+                        Po&nbsp;kliknięciu w&nbsp;przycisk <span>Wyloguj się i&nbsp;zakończ badanie</span> udzielone odpowiedzi zostają zatwierdzone i&nbsp;przesłane do&nbsp;bazy danych&nbsp;SQL wraz&nbsp;z&nbsp;oznaczeniem, który użytkownik ich udzielił.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
 
             <!-- ------------------------------------------------------------------------------------------------ -->
 
@@ -944,7 +1065,7 @@
             <section id="section-home" class="section-home background-section">
                 <h2><span>Cześć, jestem</span></h2>
                 <h1>Mateusz Wuchnicki</h1>
-                <p class="text">Specjalista ds. GIS, Analityk danych<br>oraz pasjonat Data Science i Machine Learningu<br>z Krakowa, Polska</p>
+                <p class="text">Specjalista ds.&nbsp;GIS, Analityk danych<br>oraz&nbsp;pasjonat Data&nbsp;Science i&nbsp;Machine&nbsp;Learningu<br>z&nbsp;Krakowa, Polska</p>
                 <button class="cv-button-home">
                     <p class="button-text">POBIERZ CV</p>
                     <p class="version">Wersja polska</p>
@@ -977,12 +1098,9 @@
 
                     <div class="subsection-about">
                         <h2><span>O mnie</span></h2>
-                        <h1>Specjalista ds. GIS, fotogrametrii i teledetekcji</h1>
+                        <h1>Specjalista ds. GIS, fotogrametrii i&nbsp;teledetekcji</h1>
                         <div class="text">
-                            <p>Jestem wykwalifikowanym inżynierem z ponad siedmioletnim doświadczeniem. Brałem czynny udział w wielu projektach komercyjnych i badawczo-rozwojowych.
-                                Wykonywałem wiele analiz przestrzennych, opracowywałem ortofotomapy, modele terenu oraz chmury punktów pochodzące z lotniczego skaningu laserowego, a także pisałem sprawozdania techniczne. Byłem odpowiedzialny między innymi za planowanie, monitorowanie i koordynowanie misji lotniczych, których celem było pozyskanie wysokorozdzielczych zdjęć lotniczych i chmury punktów ALS.
-                                Posiadam wyjątkowe umiejętności analityczne, organizacyjne, planistyczne i komunikacyjne oraz skoncentrowane podejście do pracy w ustrukturyzowanym środowisku.
-                                Poszukuję pracy, w której wykorzystam moje umiejętności i będę mógł dalej się rozwijać w szerokopojętej branży GIS.
+                            <p>Jestem wykwalifikowanym inżynierem z ponad siedmioletnim doświadczeniem. Brałem czynny udział w wielu projektach komercyjnych i badawczo-rozwojowych. Wykonywałem wiele analiz przestrzennych, opracowywałem ortofotomapy, modele terenu oraz chmury punktów pochodzące z lotniczego skaningu laserowego, a także pisałem sprawozdania techniczne. Byłem odpowiedzialny między innymi za planowanie, monitorowanie i koordynowanie misji lotniczych, których celem było pozyskanie wysokorozdzielczych zdjęć lotniczych i chmury punktów ALS. Posiadam wyjątkowe umiejętności analityczne, organizacyjne, planistyczne i komunikacyjne oraz skoncentrowane podejście do pracy w ustrukturyzowanym środowisku. Poszukuję pracy, w której wykorzystam moje umiejętności i będę mógł dalej się rozwijać w szerokopojętej branży GIS.
                             </p>
                         </div>
                         <button class="cv-button-home">
@@ -995,7 +1113,7 @@
                         <h1>Hobby &#124; Zainteresowania</h1>
                         <div class="interests-list">
                             <div class="interests-element">
-                                <h2>Zdobywanie<br>szczytów górskich</h2>
+                                <h2>Zdobywanie szczytów&nbsp;górskich</h2>
                                 <img src="assets/icons/mountain.png" alt="mountain">
                             </div>
                             <div class="interests-element">
@@ -1029,8 +1147,8 @@
                         <div class="header">
                             <ul class="motto motto-resume">
                                 <li>
-                                    <h2>„Dobre decyzje są wynikiem doświadczenia, a doświadczenie
-                                        zdobywa się poprzez podejmowanie błędnych decyzji.”</h2>
+                                    <h2>„Dobre decyzje są&nbsp;wynikiem doświadczenia, a&nbsp;doświadczenie
+                                        zdobywa&nbsp;się poprzez podejmowanie błędnych decyzji.”</h2>
                                 </li>
                                 <li>
                                     <p>- Mark Twain</p>
@@ -1045,8 +1163,8 @@
                             <h1><span>Doświadczenie</span></h1>
                         </div>
                         <div class="resume-element">
-                            <div class="experience-item position">Menager ds. technicznych w dziale technologii lotniczych</div>
-                            <div class="experience-item company">SmallGIS Sp. z o.o. <span>&#124;</span> Kraków</div>
+                            <div class="experience-item position">Menager ds.&nbsp;technicznych w&nbsp;dziale technologii lotniczych</div>
+                            <div class="experience-item company">SmallGIS&nbsp;Sp.&nbsp;z&nbsp;o.o. <span>&#124;</span> Kraków</div>
                             <div class="experience-item date">01/2023 - 04/2024</div>
                             <div class="experience-item description">
                                 <p>W wewnątrznej strukturze firmy pełniłem funkcję menagera do spraw technicznych w dziale technologii lotniczych. Byłem odpowiedzialny za sprawne działanie i merytoryczne wsparcie zespołu analityków oraz personelu technicznego. Równocześnie sprawowałem funkcję nadzoru operacyjnego misji lotniczych.</p>
@@ -1252,8 +1370,8 @@
                         <div class="header">
                             <ul class="motto motto-skills">
                                 <li>
-                                    <h2>„Bardzo wierzę w szczęście i uważam, że im ciężej pracuję,
-                                        tym więcej go mam.”</h2>
+                                    <h2>„Bardzo wierzę w&nbsp;szczęście i&nbsp;uważam, że&nbsp;im&nbsp;ciężej pracuję,
+                                        tym więcej&nbsp;go mam.”</h2>
                                 </li>
                                 <li>
                                     <p>- Thomas Jefferson</p>
@@ -1695,10 +1813,11 @@
                     <div class="subsection-portfolio">
                         <div class="filter-options">
                             <p>Filtruj:</p>
-                            <button onclick="filterElement('all')" data-category="all">Wszystkie<span class="category-count">8</span></button>
+                            <button onclick="filterElement('all')" data-category="all">Wszystkie<span class="category-count">9</span></button>
                             <button onclick="filterElement('data')" data-category="data">Data Science<span class="category-count">4</span></button>
                             <button onclick="filterElement('graphic')" data-category="graphic">Projekty graficzne<span class="category-count">3</span></button>
-                            <button onclick="filterElement('website')" data-category="website">Front-End<span class="category-count">1</span></button>
+                            <button onclick="filterElement('website')" data-category="website">Front-End<span class="category-count">2</span></button>
+                            <button onclick="filterElement('gis')" data-category="gis">Projekty GIS<span class="category-count">1</span></button>
                         </div>
                     </div>
 
@@ -1708,7 +1827,7 @@
                                 <img src="assets/images/portfolio1.jpg" alt="Strony WWW 1">
                                 <div class="title-and-button">
                                     <div class="portfolio-info-text">
-                                        <h2>Front-end web development</h2>
+                                        <h2>Front-End</h2>
                                         <h1>Własna stwona - CV</h1>
                                     </div>
                                     <div class="portfolio-button">
@@ -1826,6 +1945,22 @@
                                     <div class="portfolio-button">
                                         <button class="cv-button" data-modal="designModal8">OTWÓRZ</button>
                                         <button class="cv-button_2" data-modal="designModal8">
+                                            <img src="assets/icons/open_in_new.png" alt="Otwórz" class="hover-image" data-hover="assets/icons/open_in_new_hover.png">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item gis website">
+                                <img src="assets/images/portfolio9.jpg" alt="GIS 1">
+                                <div class="title-and-button">
+                                    <div class="portfolio-info-text">
+                                        <h2>Projekty GIS, Front-End</h2>
+                                        <h1>Narzędzie partycymacyjne - geoankieta</h1>
+                                    </div>
+                                    <div class="portfolio-button">
+                                        <button class="cv-button" data-modal="designModal9">OTWÓRZ</button>
+                                        <button class="cv-button_2" data-modal="designModal9">
                                             <img src="assets/icons/open_in_new.png" alt="Otwórz" class="hover-image" data-hover="assets/icons/open_in_new_hover.png">
                                         </button>
                                     </div>
@@ -1962,7 +2097,7 @@
                         <div class="header">
                             <ul class="motto motto-contact">
                                 <li>
-                                    <h2>„Kto mówi - sieje, kto słucha - zbiera.”</h2>
+                                    <h2>„Kto&nbsp;mówi -&nbsp;sieje, kto&nbsp;słucha -&nbsp;zbiera.”</h2>
                                 </li>
                                 <li>
                                     <p>- Pitagoras</p>
@@ -1972,7 +2107,7 @@
                     </div>
 
                     <div class="subsection-contact">
-                        <h1>Skontaktuj się ze mną telefonicznie lub poprzez formularz poniżej</h1>
+                        <h1>Skontaktuj&nbsp;się ze&nbsp;mną telefonicznie lub&nbsp;poprzez formularz poniżej</h1>
                     </div>
 
                     <div class="subsection-contact">
@@ -2014,7 +2149,7 @@
                                     <textarea id="message" name="message" placeholder="Treść wiadomości*" required></textarea>
                                 </div>
                                 <div class="form-element">
-                                    <button type="submit">Wyślij wiadomość</button>  <!-- onclick="sendMail()" -->
+                                    <button type="submit">Wyślij wiadomość</button>
                                 </div>
                                 <div class="form-element">
                                     <p>Pole oznaczone * są wymagane</p>
@@ -2060,46 +2195,6 @@
     <!-- Hover -->
     <script src="assets/scripts/hover.js"></script>
 
-    <script>
-        const form = document.querySelector('form');
-        const nameImput = document.getElementById("name");
-        const emailImput = document.getElementById("email");
-        const phoneImput = document.getElementById("phone");
-        const subjectImput = document.getElementById("subject");
-        const messageImput = document.getElementById("message");
-
-        const serviceID = 'service_paccnmf';
-        const templateID = 'template_i6gg27k';
-        const publicKey = 'ptNCneXPkerPcOMwE';
-
-
-        emailjs.init(publicKey);
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const inputData = {
-                name: nameImput.value,
-                user_email: emailImput.value,
-                phone: phoneImput.value,
-                subject: subjectImput.value,
-                message: messageImput.value
-            };
-            emailjs.send(serviceID, templateID, inputData).then(
-                () => {
-                    nameImput.value = '';
-                    emailImput.value = '';
-                    phoneImput.value = '';
-                    subjectImput.value = '';
-                    messageImput.value = '';
-                    alert("Wiadomość została wysłana!");
-                },
-                (error) => {
-                    alert("Wysyłanie wiadomości nie powiodło się!");
-                }
-            );
-        });
-    </script>
-    
 </body>
 
 </html>
