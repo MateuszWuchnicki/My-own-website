@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    white-space: nowrap;
 
 }
 
@@ -1261,7 +1262,7 @@ h1 {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #fff;
     margin: 5% auto;
     padding: 40px;
     width: 80%;
