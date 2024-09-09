@@ -18,19 +18,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-// Tworzenie niestandardowej ikony
-var customIcon = L.icon({
-    iconUrl: 'assets/images/icons/marker.png',
-    iconSize: [60, 60], // Rozmiar ikony
-    iconAnchor: [30, 60], // Punkt kotwiczenia ikony (środek dolnej krawędzi)
-    popupAnchor: [0, -60] // Punkt kotwiczenia popupu
-});
+// // Tworzenie niestandardowej ikony
+// var customIcon = L.icon({
+//     iconUrl: 'assets/images/icons/marker.png',
+//     iconSize: [60, 60], // Rozmiar ikony
+//     iconAnchor: [30, 60], // Punkt kotwiczenia ikony (środek dolnej krawędzi)
+//     popupAnchor: [0, -60] // Punkt kotwiczenia popupu
+// });
 
 // Dodanie znacznika na mapie z niestandardową ikoną
-var marker = L.marker([50.062757408316024, 19.936777774127684], {
-        icon: customIcon
-    }).addTo(map)
-    .openPopup();
+// var marker = L.marker([50.062757408316024, 19.936777774127684], {
+//         icon: customIcon
+//     }).addTo(map)
+//     .openPopup();
 
 
 //// Add a popup to the marker
