@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+/*    white-space: nowrap;*/
+
 }
 
 body {
@@ -419,6 +421,10 @@ img {
 }
 
 .subsection-about:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.subsection-about:nth-child(4) {
     grid-column: 1 / -1;
 }
 
@@ -977,6 +983,12 @@ h1 {
     gap: 40px;
 }
 
+.arrow-item2 {
+    display: grid;
+    position: relative;
+    top: 80px;
+}
+
 .arrow {
     transform: rotate(270deg);
     cursor: pointer;
@@ -1020,6 +1032,29 @@ h1 {
 }
 
 .arrow2 span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.arrow3 {
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.arrow3 span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(180deg);
+    animation: animate 2s infinite;
+}
+
+.arrow3 span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow3 span:nth-child(3) {
     animation-delay: -0.4s;
 }
 
@@ -2437,6 +2472,9 @@ form {
         font-size: 1.8em;
         margin: 0 0 1rem 0;
     }
+    .arrow-item2 {
+        top: 80px;
+    }
 
     /* ---------------------------------------  About  --------------------------------------- */
 
@@ -3239,6 +3277,10 @@ form {
 
 
     /* ---------------------------------------  Home  --------------------------------------- */
+    .arrow-item2 {
+        top: 80px;
+    }
+    
     .section-home h1 {
         font-size: 3.5em;
         line-height: 1.2;
@@ -3373,7 +3415,12 @@ form {
     .details-container .details-category h3 {
         font-size: 0.9em;
     }
-
+    
+    .arrow span,
+    .arrow2 span{
+        width: 4px;
+        height: 4px;
+    }
 
     /* ---------------------------------------  Portfolio  --------------------------------------- */
     .content-portfolio {
