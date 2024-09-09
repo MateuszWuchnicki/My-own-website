@@ -16,7 +16,7 @@ const nameImput = document.getElementById("name");
 const emailImput = document.getElementById("email");
 const messageImput = document.getElementById("message");
 
-const serviceID = 'service_paccnmf';
+const serviceID = 'service_hup7nfz';
 const templateID = 'template_i6gg27k';
 const publicKey = '8_Syl3YJmNfuIGuei';
 
