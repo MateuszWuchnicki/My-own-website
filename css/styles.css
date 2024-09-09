@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    white-space: nowrap;*/
+    /*    white-space: nowrap;*/
 
 }
 
@@ -1418,6 +1418,7 @@ h1 {
 
 .detail-item-center:last-child {
     justify-self: center;
+    margin: 15px 0;
 }
 
 .detail-item-center a {
@@ -1495,8 +1496,8 @@ h1 {
 }
 
 .project-description h2 {
-    margin: 0 0 10px 0;
-    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    font-size: 1.5em;
 }
 
 .project-other-images-project1 {
@@ -1774,7 +1775,10 @@ h1 {
     margin: 15px 0 0 0;
 }
 
-.project-diabetes ul li {}
+.project-diabetes ul li {
+    text-align: justify;
+    margin: 0 0 0 20px;
+}
 
 .project-diabetes ul li span {
     font-weight: bold;
@@ -1842,20 +1846,11 @@ h1 {
 
 /* -----------  GIS  ------------ */
 
-.project-gis,
-.project-other-images-project9 {
+.project-gis {
     padding: 0 30px;
     font-size: 1.1em;
-}
-
-.project-gis p {
-    text-align: justify;
-    margin: 50px 0 0 0;
-}
-
-.project-gis p:first-child {
-    text-align: justify;
-    margin: 0;
+    display: grid;
+    gap: 25px;
 }
 
 .project-gis p span {
@@ -1863,67 +1858,52 @@ h1 {
     font-size: 1.3em;
 }
 
-.project-gis p:first-child {
-    clear: both;
+.project-gis h2 {
+    margin: 0;
 }
 
-.project-gis .project9-first-paragraf {
-    margin: 0 0 15px 0;
+.project-gis .project9-element-small {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 35px;
 }
 
-.project-gis .project9-paragraf-small {
-    height: 530px;
+.project-gis .project9-element-small .project9-item-small img,
+.project-gis .project9-element-right .project9-item img,
+.project-gis .project9-element-left .project9-item img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1D3557;
+    padding: 0;
+}
+
+.project-gis .project9-element-small .project9-item-small p,
+.project-gis .project9-element-right .project9-item p,
+.project-gis .project9-element-left .project9-item p {
     margin: 15px 0 0 0;
 }
 
-.project-gis .project9-paragraf {
-    height: 355px;
-    margin: 15px 0 0 0;
+.project-gis .project9-element-right {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    gap: 35px;
 }
 
-.project-gis .image-item-project9-small {
-    width: 450px;
-    height: auto;
-    padding: 0;
-    border: 1px solid #1D3557;
+.project-gis .project9-element-left {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 35px;
 }
 
-.project-gis .image-item-project9 {
-    width: 700px;
-    height: auto;
-    padding: 0;
-    border: 1px solid #1D3557;
+.project-gis p {
+    text-align: justify;
 }
 
-.project-gis .left {
-    float: left;
-    margin: 15px 35px 15px 0;
+.project-gis .project9-element-small .project9-item-small .project9-paragraf,
+.project-gis .project9-element-right .project9-item .project9-paragraf, 
+.project-gis .project9-element-left .project9-item .project9-paragraf {
+    text-align: left;
 }
-
-.project-gis .right {
-    float: right;
-    margin: 0 0 0 35px;
-}
-
-
-
-/*
-.image-item-project9:nth-child(3) {
-    float: left;
-    margin: 0 35px 0 0;
-}
-
-.image-item-project9:nth-child(4) {
-    float: right;
-    margin: 0 0 0 35px;
-}
-
-.image-item-project9:nth-child(5) {
-    float: left;
-    margin: 0 35px 0 0;
-}
-*/
-
 
 
 /* -------------------------------- */
@@ -2472,6 +2452,7 @@ form {
         font-size: 1.8em;
         margin: 0 0 1rem 0;
     }
+
     .arrow-item2 {
         top: 80px;
     }
@@ -2632,7 +2613,7 @@ form {
     }
 
     .portfolio-item img {
-        padding: 10px;
+        padding: 20px;
     }
 
     .portfolio-list {
@@ -2640,7 +2621,7 @@ form {
     }
 
     .title-and-button {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .title-and-button .portfolio-button button {
@@ -2663,6 +2644,22 @@ form {
     .filter-options button {
         font-size: 0.9em;
         padding: 5px 10px;
+    }
+    
+    .project-gis .project9-element-small {
+        gap: 20px;
+    }
+    
+    .project-gis .project9-element-right {
+        display: grid;
+        grid-template-columns: 1fr 600px;
+        gap: 20px;
+    }
+
+    .project-gis .project9-element-left {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        gap: 20px;
     }
 
     /* ---------------------------------------  Testimonial  --------------------------------------- */
@@ -3115,6 +3112,175 @@ form {
     .cv-button {
         padding: 10px 20px;
     }
+
+
+    /* ------  Portfolio Project ----- */
+
+    .modal-content {
+        width: 90%;
+        height: 90%;
+        padding: 30px;
+    }
+
+    .project-header {
+        margin: 0 0 20px 0;
+    }
+
+    .project-title h1 {
+        font-size: 2em;
+    }
+
+    .project-header-item {
+        gap: 15px;
+    }
+
+    .close-button,
+    .arrow-button {
+        width: 40px;
+    }
+
+    .project-details {
+        margin: 0 0 20px 0;
+    }
+
+    .details-item {
+        padding: 10px;
+    }
+
+    .details-header h2 {
+        font-size: 1.2em;
+    }
+
+    .project-description h2 {
+        font-size: 1.3em;
+    }
+
+    .info-item {
+        grid-template-columns: 20px 65px 1fr;
+        gap: 5px 15px;
+    }
+
+    .info-category {
+        font-size: 0.9em;
+    }
+
+    .info-text {
+        font-size: 0.9em;
+    }
+
+    .list-technologies {
+        margin: 0 0 10px 0;
+    }
+
+    .tech-element {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .project-ownweb,
+    .project-dogcat,
+    .project-other-images-project1,
+    .project-wedding,
+    .project-other-images-project3,
+    .project-other-images-project4,
+    .project-diabetes,
+    .project-other-images-project5,
+    .project-logo,
+    .project-other-images-project8,
+    .project-gis,
+    .project-other-images-project9 {
+        padding: 0 20px;
+        font-size: 0.9em;
+    }
+
+    .project-other-images-project1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cv-button-project {
+        width: 150px;
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .project-dogcat-image1 {
+        margin: 0 0 0 25px;
+        width: 350px;
+        height: 600px;
+    }
+
+    .project-dogcat .project-dogcat-list {
+        margin: 25px 0 0 0;
+    }
+
+    .project-dogcat .project-dogcat-bold {
+        margin: 15px 0 0 0;
+    }
+
+    .project-dogcat .project-dogcat-list li {
+        margin: 5px 0 0 20px;
+    }
+
+    .project-dogcat .project-dogcat-list li ul {
+        margin: 5px 0 0 0;
+    }
+
+    .project-dogcat-image2 {
+        width: 450px;
+        margin: 25px 25px 0 0;
+    }
+
+    .project-dogcat p:last-child {
+        margin: 40px 0 0 0;
+    }
+
+    .project-other-images-project2 {
+        font-size: 0.9em;
+    }
+
+    .project-wedding .project-wedding-list {
+        gap: 40px;
+    }
+
+    .project-diabetes .paragraf-header {
+        margin: 15px 0 0 0;
+    }
+
+    .project-diabetes .project-diabetes-image5 {
+        width: 450px;
+    }
+
+    .project-logo-image8 {
+        width: 450px;
+        margin: 0 0 0 25px;
+    }
+    
+    .project-gis {
+        gap: 15px;
+    }
+    
+    .project-gis .project9-element-small {
+        grid-template-columns: 400px 1fr;
+    }
+    
+    .project-gis .project9-element-right {
+        grid-template-columns: 1fr 500px;
+    }
+    
+    .project-gis .project9-element-left {
+        grid-template-columns: 500px 1fr;
+    }
+    
+    
+    
+    
+    
+    
+
+
+
+
+
 }
 
 
@@ -3181,6 +3347,183 @@ form {
     .filter-options p {
         padding: 15px 0 15px 15px;
     }
+
+
+    /* ------  Portfolio Project ----- */
+
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details-item:nth-child(1) {
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .project-details-item:nth-child(2) {
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    .list-information {
+        margin: 15px 0;
+    }
+
+    .info-category {
+        font-size: 1.1em;
+    }
+
+    .info-text {
+        font-size: 1.1em;
+    }
+
+    .info-item {
+        grid-template-columns: 40px 125px 1fr;
+        gap: 10px 35px;
+        padding: 0 20px;
+    }
+
+    .list-technologies {
+        margin: 15px 0;
+    }
+
+    .tech-element {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+    .project-ownweb,
+    .project-dogcat,
+    .project-other-images-project1,
+    .project-wedding,
+    .project-other-images-project3,
+    .project-other-images-project4,
+    .project-diabetes,
+    .project-other-images-project5,
+    .project-logo,
+    .project-other-images-project8,
+    .project-gis,
+    .project-other-images-project9 {
+        padding: 0;
+    }
+
+    .details-header h2 {
+        font-size: 1.5em;
+    }
+
+    .project-description h2 {
+        font-size: 1.5em;
+    }
+
+    .filter-options p {
+        padding: 15px 0;
+    }
+
+    .filter-options button {
+        font-size: 0.8em;
+    }
+
+    .project-dogcat-image1 {
+        margin: 0 0 0 15px;
+        width: 250px;
+        height: 600px;
+    }
+
+    .project-dogcat-image2 {
+        width: 350px;
+        height: 170px;
+        margin: 15px 25px 0 0;
+    }
+
+    .project-dogcat p:last-child {
+        margin: 150px 0 0 0;
+    }
+
+    .project-other-images-project2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-wedding .project-wedding-list {
+        gap: 10px;
+    }
+
+    .project-wedding .project-wedding-list li {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .project-other-images-project4 {
+        gap: 10px;
+    }
+
+    .project-diabetes .project-diabetes-image5 {
+        width: 250px;
+    }
+
+    .project-logo-image8 {
+        width: 350px;
+        margin: 0 0 0 15px;
+    }
+    
+    .project-gis .project9-element-small {
+        grid-template-columns: 1fr;
+    }
+    
+    .project9-item-small:nth-child(1){
+        display: grid;
+        width: 50%;
+        justify-self: center;
+        grid-row: 2;
+    }
+    
+    .project9-item-small:nth-child(2){
+        grid-row: 1;
+    }
+    
+    .project-gis .project9-element-right,
+    .project-gis .project9-element-left {
+        grid-template-columns: 1fr;
+    }
+    
+    .project9-element-right .project9-item:nth-child(1){
+        grid-row: 1;
+    }
+    
+    .project9-element-right .project9-item:nth-child(2){
+        display: grid;
+        width: 75%;
+        justify-self: center;
+        grid-row: 2;
+    }
+    
+    
+    .project9-element-left .project9-item:nth-child(1){
+        display: grid;
+        width: 75%;
+        justify-self: center;
+        grid-row: 2;
+    }
+    
+    .project9-element-left .project9-item:nth-child(2){
+        grid-row: 1;
+    }
+    
+    .project-gis .project9-element-small .project9-item-small p, 
+    .project-gis .project9-element-right .project9-item p, 
+    .project-gis .project9-element-left .project9-item p {
+        margin: 10px 0 0 0;
+    }
+    
+    
+    
+    
+
+
+
+
+
+
 
     /* ---------------------------------------  Contactt  --------------------------------------- */
 
@@ -3280,7 +3623,7 @@ form {
     .arrow-item2 {
         top: 80px;
     }
-    
+
     .section-home h1 {
         font-size: 3.5em;
         line-height: 1.2;
@@ -3415,9 +3758,9 @@ form {
     .details-container .details-category h3 {
         font-size: 0.9em;
     }
-    
+
     .arrow span,
-    .arrow2 span{
+    .arrow2 span {
         width: 4px;
         height: 4px;
     }
@@ -3448,8 +3791,8 @@ form {
     }
 
     .title-and-button .portfolio-button button {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
 
     .portfolio-button img {
@@ -3476,7 +3819,7 @@ form {
         border: none;
         background-color: transparent;
     }
-    
+
     .filter-options {
         flex-wrap: wrap;
     }
@@ -3496,6 +3839,204 @@ form {
         font-size: 0.7rem;
         margin: -10px 0 0 0px;
     }
+    
+    
+    /* ------  Portfolio Project ----- */
+
+    .modal-content {
+        padding: 10px;
+    }
+    
+    .project-title h1 {
+        font-size: 1.2em;
+        margin: 0 0 10px 0;
+    }
+    
+    .close-button, 
+    .arrow-button {
+        width: 25px;
+    }
+    
+    .project-header {
+        margin: 0 0 10px 0;
+    }
+    
+    .project-header-item {
+        gap: 5px;
+    }
+    
+    .details-header h2 {
+        font-size: 1.2em;
+    }
+    
+    .details-item {
+        padding: 0;
+    }
+    
+    .list-information {
+        margin: 10px 0;
+    }
+    
+    .list-technologies {
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+    
+    .detail-item-center:last-child {
+        margin: 10px 0;
+    }
+    
+    .info-item {
+        grid-template-columns: 25px 80px 1fr;
+        gap: 5px 10px;
+        padding: 0 10px;
+    }
+    
+    .info-category {
+        font-size: 0.9em;
+    }
+    
+    .info-text {
+        font-size: 0.9em;
+    }
+    
+    .tech-element {
+        padding: 5px 10px;
+        font-size: 0.9em; 
+    }
+    
+    .project9-element-right .project9-item:nth-child(2),
+    .project9-element-left .project9-item:nth-child(1) {
+        width: 100%;
+    }
+    
+    .project-main-image img {
+        width: 85%;
+        height: auto;
+    }
+    
+    .project-details-item:nth-child(1) {
+        text-align: center;
+    }
+    
+    .project-gis {
+        gap: 10px;
+    }
+    
+    .project-other-images-project1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-dogcat-image1 {
+        margin: 20px 0 0 0;
+        float: none;
+        padding: 0;
+        justify-self: center;
+        width: 90%;
+        height: auto;
+    }
+    
+    .project-dogcat {
+        display: grid;
+    }
+    
+    .project-dogcat .project-dogcat-list {
+        margin: 10px 0 0 0;
+    }
+    
+    .project-dogcat p {
+        text-align: justify;
+        margin: 10px 0 0 0;
+    }
+    
+    .project-dogcat-image2 {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+        float: none;
+        justify-self: center;
+        padding: 0;
+    }
+    
+    .project-dogcat p:last-child {
+         margin: 0; 
+    }
+    
+    .project-other-images-project2 p {
+        margin: 0;
+    }
+    
+    .project-other-images-project2 img {
+        margin: 15px 0 0 0;
+    }
+    
+    .project-wedding .project-wedding-list {
+        flex-wrap: wrap;
+        margin: 10px 0 0 0;
+    }    
+    
+    .project-wedding .project-wedding-list li {
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .image-item-project3:nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    
+    .image-item-project3:nth-child(2) {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+    
+    .image-item-project3:nth-child(3) {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+    
+    .image-item-project4:nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    
+    .image-item-project4:nth-child(2) {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+    
+    .image-item-project4:nth-child(3) {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 100%;
+    }
+    
+    .project-diabetes .project-diabetes-image5 {
+        width: 90%;
+        height: auto;
+        float: none;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+    }
+    
+    .project-diabetes,
+    .project-logo {
+        display: grid;
+    }
+    
+    .project-logo-image8 {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        float: none;
+        justify-self: center;
+    }
+        
+    
+    
+    
 
     /* ---------------------------------------  Contact  --------------------------------------- */
 
