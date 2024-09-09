@@ -20,7 +20,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Tworzenie niestandardowej ikony
 var customIcon = L.icon({
-    iconUrl: '../assets/images/icons/marker.png',
+    iconUrl: 'assets/images/icons/marker.png',
     iconSize: [60, 60], // Rozmiar ikony
     iconAnchor: [30, 60], // Punkt kotwiczenia ikony (środek dolnej krawędzi)
     popupAnchor: [0, -60] // Punkt kotwiczenia popupu
