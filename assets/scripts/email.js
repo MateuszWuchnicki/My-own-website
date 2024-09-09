@@ -18,7 +18,7 @@ const messageImput = document.getElementById("message");
 
 const serviceID = 'service_paccnmf';
 const templateID = 'template_i6gg27k';
-const publicKey = 'ptNCneXPkerPcOMwE';
+const publicKey = '8_Syl3YJmNfuIGuei';
 
 
 emailjs.init(publicKey);
