@@ -25,7 +25,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 120px 120px 100px;
+    padding: 100px 120px 80px;
     height: 100vh;
 }
 
@@ -36,14 +36,16 @@ body {
     top: 0;
     left: 120px;
     align-items: center;
-    width: calc(100% - 120px);
+    width: calc(100% - 240px);
     justify-content: flex-start;
+    gap: 20px;
 }
 
 .social-links > :first-child {
     margin-right: auto;
 }
 
+/*
 .social-links > :last-child {
     margin-right: 120px;
 }
@@ -51,20 +53,87 @@ body {
 .social-links > *:not(:first-child) {
     margin-left: 15px;
 }
+*/
 
 .social-links .social-icons img {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
 }
 
 .social-links .main-logo .img-logo {
     width: auto;
     height: 70px;
-    margin: 25px 0;
+    margin: 15px 0;
     padding: 0;
 }
 
+.check {
+    display: grid;
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.languages {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.languages span {
+    width: 45px;
+    height: 30px;
+    padding: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.languages img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.check::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 25px;
+    background: #1D3557;     
+    border-radius: 25px;
+    
+}
+
+.check:checked::before {
+    background: #FF451B;
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #1D3557;
+    box-sizing: border-box;
+}
+
+.check:checked::after {
+    left: 25px;
+    border: 2px solid #e51717;
+}
+
+[data-key] {
+    white-space: pre-line;
+}
 
 
 
@@ -92,7 +161,6 @@ body {
     width: auto;
     height: 50px;
 }
-
 
 .menu .menu-links {
     display: none;
@@ -411,6 +479,14 @@ img {
     gap: 20px;
 }
 
+.text-home {
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 1.1em;
+    hyphens: none;
+    white-space: pre-line;
+}
+
 
 /* -------------------------------- */
 /* -----------  About  ------------ */
@@ -503,9 +579,9 @@ h1 {
     font-size: 2em;
 }
 
-.text {
+.text-about {
     text-align: justify;
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 1.1em;
     hyphens: none;
 }
@@ -1249,6 +1325,10 @@ h1 {
     background-color: #fff3e8;
 }
 
+.python {
+    background-color: #f7e8ff;
+}
+
 .title-and-button {
     display: grid;
     align-items: center;
@@ -1440,6 +1520,12 @@ h1 {
 .detail-item-center a {
     text-decoration: none;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.details-item a {
+    text-decoration: none;
 }
 
 .details-header {
@@ -1809,8 +1895,7 @@ h1 {
 
 /* -----------  House prices  ------------ */
 
-.project-house,
-.project-other-images-project6 {
+.project-house {
     padding: 0 30px;
     font-size: 1.1em;
 }
@@ -1820,10 +1905,40 @@ h1 {
     margin: 15px 0 0 0;
 }
 
+.project-house ul {
+    margin: 0 0 0 35px;
+}
+
+.project-house p span {
+    color: #FF451B;
+    font-size: 1.2em;
+}
+
+.project-house img {
+    float: right;
+    width: 750px;
+    height: auto;
+    margin: 15px 0 15px 35px;
+    padding: 0;
+}
+
+.project-house .paragraf-header {
+    font-size: 1.2em;
+    color: #FF451B;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.project-house p a {
+    color: #ff451b;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
 /* -----------  Titanic  ------------ */
 
-.project-titanic,
-.project-other-images-project7 {
+.project-titanic {
     padding: 0 30px;
     font-size: 1.1em;
 }
@@ -1833,12 +1948,50 @@ h1 {
     margin: 15px 0 0 0;
 }
 
+.project-titanic p a {
+    color: #ff451b;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.project-titanic .paragraf-header {
+    font-size: 1.2em;
+    color: #FF451B;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.project-titanic ul .list-header {
+    font-size: 1.1em;
+    color: #1D3557;
+    font-weight: bold;
+}
+
+.project-titanic p span {
+    color: #FF451B;
+    font-size: 1.1em;
+}
+
+.project-titanic ul {
+    margin: 0 0 0 35px;
+}
+
+.project-titanic img {
+    float: right;
+    width: 450px;
+    height: auto;
+    margin: 0 0 15px 35px;
+    padding: 0;
+}
+
+
 /* -----------  Logo  ------------ */
 
-.project-logo,
-.project-other-images-project8 {
+.project-logo {
     padding: 0 30px;
     font-size: 1.1em;
+    height: 400px;
 }
 
 .project-logo p {
@@ -1920,6 +2073,81 @@ h1 {
 .project-gis .project9-element-left .project9-item .project9-paragraf {
     text-align: left;
 }
+
+/* -----------  Web Scraping  ------------ */
+
+.project-scraping {
+    padding: 0 30px;
+    font-size: 1.1em;
+}
+
+.project-scraping a {
+    text-decoration: none;
+    color: #FF451B;
+    font-size: 1.3em;
+}
+
+.project-scraping p {
+    text-align: justify;
+    margin: 15px 0 0 0;
+    
+}
+
+.project-scraping-image10 {
+    float: right;
+    width: 650px;
+    height: auto;
+    margin: 0 0 0 35px;
+    padding: 0;
+}
+
+
+/* ----------- Password Generator ------------ */
+
+
+.project-password {
+    padding: 0 30px;
+    font-size: 1.1em;
+}
+
+.project-password p {
+    text-align: justify;
+    margin: 15px 0 0 0;
+}
+
+.project-password-image11 {
+    float: right;
+    width: 650px;
+    height: auto;
+    margin: 0 0 0 35px;
+    padding: 0;
+}
+
+.project-password-clear {
+    clear: both;
+}
+
+.project-password ul {
+    margin: 0 0 0 35px;
+}
+
+.project-password ul li p {
+    text-align: justify;
+    margin: 5px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------------- */
@@ -2313,10 +2541,10 @@ form {
 /* -----------  Footer  ------------ */
 
 .footer {
-    display: block;
+    display: flex;
     color: #1D3557;
     text-align: center;
-    padding: 40px 180px;
+    padding: 25px 180px;
     position: fixed;
     bottom: 0;
     font-size: 1.2rem;
@@ -2344,7 +2572,7 @@ form {
     /* ---------------------------------------  *  --------------------------------------- */
 
     .container {
-        padding: 60px 40px 40px;
+        padding: 80px 100px 60px;
     }
 
     .section {
@@ -2366,8 +2594,8 @@ form {
     }
 
     .social-links {
-        left: 40px;
-        width: calc(100% - 80px);
+        left: 100px;
+        width: calc(100% - 200px);
     }
 
     .social-links > :last-child {
@@ -2386,8 +2614,8 @@ form {
 
     .social-links .main-logo .img-logo {
         width: auto;
-        height: 40px;
-        margin: 10px 0;
+        height: 50px;
+        margin: 15px 0;
     }
 
     .cv-button {
@@ -2407,7 +2635,7 @@ form {
     }
 
     .footer {
-        padding: 10px 120px;
+        padding: 20px 120px 20px 10px;
         font-size: 0.9rem;
     }
 
@@ -2422,12 +2650,12 @@ form {
     }
 
     .menu .menu-links li {
-        padding: 0 0 0.2rem 1rem;
+        padding: 0 0 0.4em 0.5em;
     }
 
     .menu .menu-links li a {
-        font-size: 0.8rem;
-        padding-left: 0.2rem;
+        font-size: 0.85em;
+        padding-left: 0.2em;
     }
 
     .profile-pic {
@@ -2458,8 +2686,8 @@ form {
     }
 
     img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     /* ---------------------------------------  Home  --------------------------------------- */
@@ -3287,6 +3515,11 @@ form {
         grid-template-columns: 500px 1fr;
     }
     
+    .project-scraping-image10 {
+        width: 450px;
+        margin: 0 0 0 25px;
+    }
+    
     
     
     
@@ -3531,7 +3764,10 @@ form {
         margin: 10px 0 0 0;
     }
     
-    
+    .project-scraping-image10 {
+        width: 350px;
+        margin: 0 0 0 15px;
+    }
     
     
 
@@ -4050,6 +4286,14 @@ form {
     }
     
     .project-logo-image8 {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        float: none;
+        justify-self: center;
+    }
+    
+    .project-scraping-image10 {
         width: 90%;
         margin: 0;
         padding: 0;
