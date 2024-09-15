@@ -142,7 +142,7 @@ body {
 .menu {
     background: #fff;
     color: #1D3557;
-    padding: 1rem;
+    padding: 1em;
     position: relative;
     margin-right: 40px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -152,7 +152,7 @@ body {
 .menu .menu-toggle {
     display: flex;
     text-align: right;
-    padding: 0 1rem;
+    padding: 0 1em;
     align-items: center;
     justify-content: space-between;
 }
@@ -171,9 +171,9 @@ body {
 
 .menu .menu-links li {
     display: flex;
-    margin: 0 2.5rem 0.2rem 2.5rem;
+    margin: 0 2.5em 0.2em 2.5em;
     border-bottom: 1px solid #dbdbdb;
-    padding: 0 0 0.2rem 2rem;
+    padding: 0.5em 0 0.5em 2em;
     align-items: center;
 }
 
@@ -181,10 +181,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 0.6rem;
+    padding-left: 0.6em;
     color: #1D3557;
     transition: background-color 0.3s;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .menu .menu-links li a.active,
@@ -550,7 +550,7 @@ img {
 
 .about-list li {
     display: grid;
-    font-size: 1rem;
+    font-size: 1em;
     color: #ededed;
     margin: 10px 30px;
     padding: 5px;
@@ -564,7 +564,7 @@ img {
 
 .about-list li span {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -591,7 +591,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 2em;
     margin: 0 auto;
     align-items: center;
     width: 100%;
@@ -630,7 +630,7 @@ h1 {
 }
 
 .interests-element h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     height: 50px;
     padding: 0;
     margin: 20px 10px 10px;
@@ -743,14 +743,14 @@ h1 {
 .resume-element .position,
 .resume-element .field,
 .resume-element .course-name {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: bold;
     color: #1D3557;
 }
 
 .resume-element .company,
 .resume-element .university {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     color: #1D3557;
     font-style: italic;
 }
@@ -763,7 +763,7 @@ h1 {
 .resume-element .date {
     display: flex;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     border: 1px solid #cccccc;
     padding: 10px;
     margin-left: 10px;
@@ -775,7 +775,7 @@ h1 {
 .resume-element .description {
     margin: 10px 0 20px 0;
     color: #39475a;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
 }
@@ -813,7 +813,7 @@ h1 {
     position: absolute;
     top: 1.2em;
     left: -25px;
-    margin-top: -0.9rem;
+    margin-top: -0.9em;
     background: #FF451B;
     height: 10px;
     width: 10px;
@@ -867,7 +867,7 @@ h1 {
 
 .resume-element .degree,
 .resume-element .course-duration {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: #1D3557;
     font-weight: bold;
     font-style: italic;
@@ -950,7 +950,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 60px;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     cursor: pointer;
 }
 
@@ -1228,7 +1228,7 @@ h1 {
 }
 
 .filter-options p {
-    font-size: 1rem;
+    font-size: 1em;
     display: block;
     box-sizing: border-box;
     color: #1D3557;
@@ -1263,7 +1263,7 @@ h1 {
     display: grid;
     color: #1D3557;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     margin: -10px 0 0 5px;
 }
 
@@ -2228,8 +2228,8 @@ h1 {
 
 .card-image {
     display: grid;
-    height: 4rem;
-    width: 4rem;
+    height: 4em;
+    width: 4em;
     border-radius: 50%;
     align-content: center;
     justify-content: center;
@@ -2244,8 +2244,8 @@ h1 {
 
 .card-sign {
     display: grid;
-    height: 3rem;
-    width: 3rem;
+    height: 3em;
+    width: 3em;
     align-items: center;
     justify-self: end;
     margin-bottom: -10px;
@@ -2259,16 +2259,16 @@ h1 {
 }
 
 .card-content .name {
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 .card-content .position {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
 .description {
-    font-size: 1rem;
+    font-size: 1em;
     color: #707070;
 }
 
@@ -2555,7 +2555,7 @@ form {
     padding: 25px 180px;
     position: fixed;
     bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .footer a {
@@ -2643,8 +2643,8 @@ form {
     }
 
     .footer {
-        padding: 20px 120px 20px 10px;
-        font-size: 0.9rem;
+        padding: 20px 120px 20px 120px;
+        font-size: 0.9em;
     }
 
     /* ---------------------------------------  Menu  --------------------------------------- */
@@ -2702,7 +2702,7 @@ form {
 
     .section-home p {
         font-size: 1.8em;
-        margin: 0 0 1rem 0;
+        margin: 0 0 1em 0;
     }
 
     .arrow-item2 {
@@ -2727,11 +2727,11 @@ form {
 
     .about-list li {
         margin: 5px 25px;
-        font-size: 0.7rem;
+        font-size: 0.7em;
     }
 
     .about-list li span {
-        font-size: 0.7rem;
+        font-size: 0.7em;
         padding-bottom: 5px;
     }
 
@@ -2745,7 +2745,7 @@ form {
     }
 
     .interests-list {
-        gap: 1.5rem;
+        gap: 1.5em;
     }
 
     .interests-element {
@@ -2759,7 +2759,7 @@ form {
     }
 
     .interests-element h2 {
-        font-size: 1.1rem;
+        font-size: 1.1em;
         height: 50px;
         margin: 15px 10px 10px;
     }
@@ -2791,29 +2791,29 @@ form {
     .resume-element .position,
     .resume-element .field,
     .resume-element .course-name {
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
 
     .resume-element .company,
     .resume-element .university {
-        font-size: 0.9rem;
+        font-size: 0.9em;
     }
 
     .resume-element .date {
-        font-size: 0.9rem;
+        font-size: 0.9em;
         margin-left: 5px;
         padding: 10px 5px;
     }
 
     .resume-element .description {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         margin: 5px 0 15px 0;
         padding-bottom: 15px;
     }
 
     .resume-element .degree,
     .resume-element .course-duration {
-        font-size: 1rem;
+        font-size: 1em;
     }
 
 
@@ -2827,7 +2827,7 @@ form {
     }
 
     .info-box {
-        padding: 0.5rem;
+        padding: 0.5em;
     }
 
     .info-box .icon img {
@@ -2861,7 +2861,7 @@ form {
 
     .category-count {
         right: 5px;
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 
     .portfolio-item img {
@@ -2890,7 +2890,7 @@ form {
     }
 
     .filter-options p {
-        font-size: 0.9rem;
+        font-size: 0.9em;
     }
 
     .filter-options button {
@@ -2929,28 +2929,28 @@ form {
     }
 
     .card-image {
-        height: 3rem;
-        width: 3rem;
+        height: 3em;
+        width: 3em;
     }
 
     .card-sign {
-        height: 2rem;
-        width: 2rem;
+        height: 2em;
+        width: 2em;
         margin-bottom: 0;
         margin-top: -5px;
     }
 
     .card-content .name {
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .card-content .position {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         font-weight: 500;
     }
 
     .description {
-        font-size: 0.9rem;
+        font-size: 0.9em;
     }
 
 
@@ -3011,10 +3011,6 @@ form {
 }
 
 
-
-
-
-
 /* --  Desktop  -- */
 
 @media (min-width: 1025px) {
@@ -3050,7 +3046,358 @@ form {
 }
 
 
+@media (max-width: 1250px) {
+    .container {
+        padding: 80px 80px 60px;
+    }
+    
+    .social-links {
+        left: 80px;
+        width: calc(100% - 160px);
+        gap: 10px;
+    }
+    
+    .languages span {
+        width: 35px;
+        height: 20px;
+    }
+    
+    .check {
+        width: 35px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .check::before {
+        width: 40px;
+        height: 20px;
+    }
+    
+    .check::after {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .check:checked::after {
+        left: 20px;
+    }
+    
+    .menu {
+        flex: 0 0 180px;
+    }
+    
+    .menu .menu-links {
+        width: 180px;
+    }
+    
+    .menu .menu-links li a {
+        font-size: 0.7em;
+    }
+    
+    .profile-pic {
+        padding: 20px 0 0 0;
+        width: 180px;
+        height: 110px;
+    }
+    
+    .profile-pic img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .profile-pic img.img-expanded {
+        height: 130px;
+        margin: -20px 0 0 0;
+    }
+    
+    img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .section {
+        padding: 30px;
+        margin-top: 30px;
+    }
+    
+    .footer {
+        padding: 20px 80px 20px 80px;
+        font-size: 0.8em;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    
+    /* ---------------------------------------  Home  --------------------------------------- */
 
+    .section-home h1 {
+        font-family: "Hind", sans-serif;
+        font-size: 3em;
+    }
+    
+    .section-home p {
+        font-size: 1.3em;
+        margin: 0 0 0.8em 0;
+    }
+    
+    .cv-button-home {
+        width: 140px;
+        height: 35px;
+        font-size: 0.7em;
+    }
+    
+    .arrow-item2 {
+        top: 30px;
+    }
+    
+    /* ---------------------------------------  About  --------------------------------------- */
+    
+    .about-image {
+        width: 200px;
+        height: 280px;
+    }
+    
+    .about-list {
+        width: 205px;
+        margin: -195px 0 0 170px;
+    }
+    
+    .about-list li {
+        margin: 5px 20px;
+    }
+    
+    .text-about {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    
+    .interests-element h2 {
+        font-size: 0.9em;
+        height: 45px;
+        margin: 10px;
+    }
+    
+    .interests-element img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    /* ---------------------------------------  Portfolio  --------------------------------------- */
+
+    .filter-options {
+        font-size: 0.85em;
+    }
+    
+    .filter-options p {
+        font-size: 0.8em;
+    }
+    
+    .filter-options button {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+    
+    .category-count {
+        font-size: 0.6em;
+    }
+    
+    .portfolio-item img {
+        padding: 10px;
+    }
+    
+    .title-and-button {
+        padding: 0 15px;
+    }
+    
+    .portfolio-info-text h1 {
+        font-size: 0.8em;
+    }
+    
+    .portfolio-info-text h2 {
+        font-size: 0.7em;
+    }
+    
+    .title-and-button .portfolio-button button {
+        height: 25px;
+        font-size: 0.5em;
+    }
+
+    /* ---------------------------------------  Models  --------------------------------------- */
+
+    .modal-content {
+        padding: 30px;
+    }
+    .project-header {
+        margin: 0 0 20px 0;
+    }
+    
+    .project-title h1 {
+        font-size: 2em;
+    }
+    
+    .close-button, .arrow-button {
+        width: 40px;
+    }
+    
+    .details-item {
+        padding: 15px;
+    }
+    
+    .info-category,
+    .info-text {
+        font-size: 0.8em;
+    }
+    
+    .cv-button-project {
+        width: 160px;
+        height: 40px; 
+        font-size: 0.9em;
+    }
+    
+    .list-technologies {
+        margin: 0 0 10px 0;
+    }
+    
+    .details-header {
+        margin: 0 0 10px 0;
+    }
+    .project-description {
+        margin: 0 0 20px 0;
+    }
+    .tech-element {
+        font-size: 0.9em;
+    }
+    
+    .project-gis,
+    .project-ownweb, 
+    .project-other-images-project1,
+    .project-dogcat,
+    .project-wedding, 
+    .project-other-images-project3, 
+    .project-other-images-project4,
+    .project-diabetes, 
+    .project-other-images-project5,
+    .project-house,
+    .project-titanic,
+    .project-logo {
+        padding: 0 20px;    
+        gap: 20px;
+        font-size: 1em;
+    }
+    
+    .project-gis .project9-element-small {
+        grid-template-columns: 360px 1fr;
+    }
+    
+    .project-gis .project9-element-right {
+        grid-template-columns: 1fr 500px;
+    }
+    
+    .project-gis .project9-element-left {
+        grid-template-columns: 500px 1fr;
+    }
+    
+    .project-dogcat .project-dogcat-list li {
+        margin: 5px 0 0 30px;
+    }
+    
+    .project-dogcat .project-dogcat-list li ul {
+        margin: 5px 0 0 5px;
+    }
+    
+    .project-dogcat .project-dogcat-bold {
+        margin: 15px 0 0 0;
+    }
+    
+    .project-dogcat .project-dogcat-list {
+        margin: 25px 0 0 0;
+    }
+    
+    .project-dogcat-image1 {
+        width: 400px;
+        height: 650px;
+        margin: 0 0 0 25px;
+    }
+    
+    .project-dogcat-image2 {
+        width: 550px;
+        margin: 25px 15px 0 0;
+    }
+    
+    .project-dogcat p:last-child {
+        margin: 40px 0 0 0;
+    }
+    
+    .project-other-images-project2 {
+        font-size: 1em;
+        margin: 45px 20px 0;
+    }
+    
+    .project-diabetes .paragraf-header,
+    .project-titanic .paragraf-header {    
+        margin: 20px 0 0 0;
+    }
+    
+    .project-diabetes .project-diabetes-image5 {
+        width: 450px;
+        margin: 15px 0 0 25px;
+    }
+    
+    .project-house img {
+        width: 600px;
+        margin: 15px 0 15px 25px;
+    }
+    
+    .project-titanic img {
+        width: 380px;
+        margin: 10px 0 15px 25px;
+    }
+        
+    .project-logo-image8 {
+        width: 500px;
+        margin: 0 0 0 25px;
+    }
+    
+    
+    
+    
+    
+    
+    /* ---------------------------------------  Contact  --------------------------------------- */
+
+    .subsection-contact h1 {
+        font-size: 1.3em;
+    }
+    
+    .contact-list img {
+        width: 60px;
+        height: 60px;
+        margin: 10px 0;
+    }
+    
+    .list-text h1 {
+        font-size: 1em;
+    }
+    
+    .list-text h2 {
+        font-size: 0.8em;
+    }
+    
+    .form-element p {
+        font-size: 0.8em;
+    }
+    
+    .alert {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    #map {
+        height: 300px;
+    }
+    
+}
 
 
 
@@ -3091,15 +3438,15 @@ form {
         width: 100%;
         height: auto;
         background-color: #fff;
-        padding: 2rem 1rem;
+        padding: 2em 1em;
         z-index: 999;
     }
 
     .sidebar li {
         display: flex;
-        margin: 0 1.5rem;
+        margin: 0 1.5em;
         border-bottom: 1px solid #dbdbdb;
-        padding: 0.5rem 2rem;
+        padding: 0.5em 2em;
         align-items: center;
     }
 
@@ -3107,10 +3454,10 @@ form {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-        padding-left: 0.5rem;
+        padding-left: 0.5em;
         color: #1D3557;
         transition: background-color 0.3s;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         width: 100%;
     }
 
@@ -3135,7 +3482,7 @@ form {
 
     .menu .closeButton {
         display: none;
-        padding-left: 1rem;
+        padding-left: 1em;
     }
 
     .footer {
@@ -3226,7 +3573,7 @@ form {
     }
 
     .about-list li {
-        font-size: 1.1rem;
+        font-size: 1.1em;
         display: grid;
         justify-items: center;
         border-bottom: none;
@@ -3238,7 +3585,7 @@ form {
     }
 
     .about-list li span {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         padding-bottom: 5px;
         text-decoration: none;
     }
@@ -3247,7 +3594,7 @@ form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
-        gap: 0.8rem;
+        gap: 0.8em;
     }
 
     .interests-element {
@@ -3306,21 +3653,21 @@ form {
 
     .resume-element .company,
     .resume-element .university {
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .resume-element .position,
     .resume-element .field,
     .resume-element .course-name {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     .resume-element .date {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     .resume-element .description {
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
 
 
@@ -4006,7 +4353,7 @@ form {
     }
 
     .info-box {
-        padding: 0.5rem;
+        padding: 0.5em;
     }
 
     .info-box .icon img {
@@ -4092,7 +4439,7 @@ form {
     }
 
     .filter-options p {
-        font-size: 0.7rem;
+        font-size: 0.7em;
         padding: 0;
     }
 
@@ -4103,7 +4450,7 @@ form {
     }
 
     .category-count {
-        font-size: 0.7rem;
+        font-size: 0.7em;
         margin: -10px 0 0 0px;
     }
     
