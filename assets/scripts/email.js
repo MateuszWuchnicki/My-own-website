@@ -1,20 +1,11 @@
-//function sendMail() {
-//    let parms = {
-//        name: document.getElementById("name").value,
-//        email: document.getElementById("email").value,
-//        subject: document.getElementById("subject").value,
-//        message: document.getElementById("message").value,
-//    }
-//    
-//    emailjs.send('service_paccnmf', 'template_pqb568o', parms).then(alert("Wiadomość została wysłana!"))
-//}
-
-
-
 const form = document.querySelector('form');
 const nameImput = document.getElementById("name");
 const emailImput = document.getElementById("email");
+const phoneImput = document.getElementById("phone");
+const subjectImput = document.getElementById("subject");
 const messageImput = document.getElementById("message");
+const alertElement = document.querySelector('.alert');
+
 
 const serviceID = 'service_hup7nfz';
 const templateID = 'template_i6gg27k';
@@ -26,19 +17,25 @@ emailjs.init(publicKey);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const inputData = {
-        name:nameImput.value,
-        user_email:emailImput.value,
-        message:messageImput.value,
+        name: nameImput.value,
+        user_email: emailImput.value,
+        phone: phoneImput.value,
+        subject: subjectImput.value,
+        message: messageImput.value
     };
     emailjs.send(serviceID, templateID, inputData).then(
         () => {
             nameImput.value = '';
             emailImput.value = '';
+            phoneImput.value = '';
+            subjectImput.value = '';
             messageImput.value = '';
-            console.log("Wiadomość została wysłana!");
+            alertElement.textContent = "Wiadomość została wysłana!";
+            alertElement.style.color = "#1fc01f"; 
         },
-        (error)=> {
-            console.log("Error!");
+        (error) => {
+            alertElement.textContent = "Wysyłanie wiadomości nie powiodło się!";
+            alertElement.style.color = "red";
         }
     );
 });

@@ -20,8 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('Element key:', key); // Debugging line
                     if (data[lang] && data[lang][key]) {
                         let text = data[lang][key];
-                        // Handle &#10; without converting to <br>
-                        element.innerHTML = text.replace(/&#10;/g, '\n');
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            element.setAttribute('placeholder', text);
+                        } else {
+                            // Handle &#10; without converting to <br>
+                            element.innerHTML = text.replace(/&#10;/g, '\n');
+                        }
                     } else {
                         console.warn('Missing key:', key); // Debugging line
                     }
