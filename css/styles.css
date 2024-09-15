@@ -3089,6 +3089,11 @@ form {
         width: 180px;
     }
     
+    .menu .menu-links li {
+        padding: 0.2em 0 0.2em 0.5em;
+        margin: 0 1.5em 0.2em 1.5em;
+    }
+    
     .menu .menu-links li a {
         font-size: 0.7em;
     }
@@ -3199,7 +3204,7 @@ form {
     }
     
     .category-count {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
     
     .portfolio-item img {
