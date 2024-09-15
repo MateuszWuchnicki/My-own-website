@@ -2367,7 +2367,7 @@ h1 {
     display: grid;
     grid-template-columns: 3fr 7fr;
     grid-template-rows: auto auto auto;
-    gap: 40px 30px;
+    gap: 30px;
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -2391,6 +2391,11 @@ h1 {
 
 .subsection-contact:nth-child(5) {
     grid-column: 1 / -1;
+}
+
+.alert {
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -2507,6 +2512,9 @@ form {
 
 .form-element:nth-child(6) {
     grid-column: 1 / 2;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
 }
 
 .form-element:nth-child(7) {
