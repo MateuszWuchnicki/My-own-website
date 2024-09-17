@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         let text = data[lang][key];
                         if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                             element.setAttribute('placeholder', text);
+                        } else if (element.tagName === 'IMG') {
+                            element.setAttribute('src', text);
                         } else {
                             // Handle &#10; without converting to <br>
                             element.innerHTML = text.replace(/&#10;/g, '\n');
