@@ -4211,11 +4211,12 @@ form {
 @media (max-width: 480px) {
 
     .container {
-        padding: 100px 0 20px;
+        padding: 100px 0 10px;
     }
 
     .section {
         padding: 20px;
+        margin-top: 80px;
     }
 
     h1 {
@@ -4233,7 +4234,7 @@ form {
 
     /* ---------------------------------------  Home  --------------------------------------- */
     .arrow-item2 {
-        top: 80px;
+        top: 30px;
     }
 
     .section-home h1 {
