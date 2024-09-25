@@ -188,7 +188,8 @@
         "contact11": "Tytuł wiadomości*",
         "contact12": "Treść wiadomości*",
         "contact13": "Wyślij wiadomość",
-        "contact14": "Pole oznaczone * są wymagane"
+        "contact14": "Pole oznaczone * są wymagane",
+        "footer1": "Zaprojektowane przez &copy;&nbsp;"
     },
     "EN": {
         "menu1": "HOME",
@@ -379,6 +380,7 @@
         "contact11": "Message title*",
         "contact12": "Message content*",
         "contact13": "Send message",
-        "contact14": "Fields marked with * are required"
+        "contact14": "Fields marked with * are required",
+        "footer1": "Designed by &copy;&nbsp;"
     }
 }
