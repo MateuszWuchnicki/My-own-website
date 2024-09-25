@@ -4280,6 +4280,9 @@ form {
         font-size: 1.2em;
     }
     
+    .cv-button-home {
+        padding: 10px;
+    }
     .cv-files {
         gap: 10px;
     }
