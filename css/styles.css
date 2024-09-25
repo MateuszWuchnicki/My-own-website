@@ -4211,7 +4211,7 @@ form {
 @media (max-width: 480px) {
     
     .menu .menu-toggle {
-        padding: 0 0.5em;
+        padding: 0;
     }
     
     .languages {
@@ -4240,6 +4240,10 @@ form {
     
     .check:checked::after {
         left: 15px;
+    }
+    
+    .cv-button-home .button-text {
+        font-size: 0.9em;
     }
 
     .container {
