@@ -4244,10 +4244,6 @@ form {
     .check:checked::after {
         left: 15px;
     }
-    
-    .cv-button-home .button-text {
-        font-size: 0.9em;
-    }
 
     .container {
         padding: 80px 0px 10px;
@@ -4286,6 +4282,10 @@ form {
     
     .cv-files {
         gap: 10px;
+    }
+
+    .cv-button-home .button-text {
+        font-size: 0.8em;
     }
 
     /* ---------------------------------------  About  --------------------------------------- */
