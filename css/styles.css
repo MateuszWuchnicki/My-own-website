@@ -76,6 +76,8 @@ body {
     width: 50px;
     cursor: pointer;
     align-items: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .languages {
