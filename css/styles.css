@@ -4226,6 +4226,7 @@ form {
     
     .check {
         width: 30px;
+        height: 15px;
     }
     
     .check::before {
