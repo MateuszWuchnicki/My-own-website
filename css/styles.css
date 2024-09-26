@@ -10,6 +10,10 @@
 
 }
 
+html, body {
+    overflow: auto;
+}
+
 body {
     font-family: Calibri, sans-serif;
     height: 100vh;
@@ -1378,6 +1382,25 @@ h1 {
 
 /* ------  Portfolio Project ----- */
 
+.scroll-up {
+    justify-self: flex-end;
+    height: 50px;
+    width: 50px;
+}
+
+.scroll-up .scroll-top {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.scroll-up .scroll-top img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
 .modal {
     opacity: 0;
     visibility: hidden;
@@ -1433,7 +1456,8 @@ h1 {
 }
 
 .close-button img,
-.arrow-button img {
+.arrow-button img,
+.scroll-top img {
     width: 100%;
     height: 100%;
     padding: 0;
@@ -1492,7 +1516,6 @@ h1 {
 .project-main-image {
     width: 100%;
     height: auto;
-    /*    border: 1px solid #457b9d;*/
     border-radius: 20px;
 }
 
@@ -2102,6 +2125,13 @@ h1 {
     padding: 0;
 }
 
+.project-scraping p a {
+    color: #ff451b;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
 
 /* ----------- Password Generator ------------ */
 
@@ -2137,8 +2167,12 @@ h1 {
     margin: 5px 0 0 0;
 }
 
-
-
+.project-password p a {
+    color: #ff451b;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 5px;
+}
 
 
 
@@ -2915,6 +2949,8 @@ form {
         grid-template-columns: 600px 1fr;
         gap: 20px;
     }
+    
+    
 
     /* ---------------------------------------  Testimonial  --------------------------------------- */
 
@@ -3228,6 +3264,11 @@ form {
     .title-and-button .portfolio-button button {
         height: 25px;
         font-size: 0.5em;
+    }
+    
+    .scroll-up {
+        height: 40px;
+        width: 40px;
     }
 
     /* ---------------------------------------  Models  --------------------------------------- */
@@ -3790,6 +3831,10 @@ form {
     .project-other-images-project3,
     .project-other-images-project4,
     .project-diabetes,
+    .project-house,
+    .project-titanic,
+    .project-scraping,
+    .project-password,
     .project-other-images-project5,
     .project-logo,
     .project-other-images-project8,
@@ -4011,6 +4056,10 @@ form {
     .project-other-images-project4,
     .project-diabetes,
     .project-other-images-project5,
+    .project-house,
+    .project-titanic,
+    .project-scraping,
+    .project-password,
     .project-logo,
     .project-other-images-project8,
     .project-gis,
@@ -4211,6 +4260,10 @@ form {
 
 
 @media (max-width: 480px) {
+    
+    .modal-content::-webkit-scrollbar {
+        width: 10px;
+    }
     
     .menu .menu-toggle {
         padding: 0;
@@ -4572,7 +4625,7 @@ form {
     }
     
     .project-main-image img {
-        width: 85%;
+        width: 100%;
         height: auto;
     }
     
@@ -4580,9 +4633,6 @@ form {
         text-align: center;
     }
     
-    .project-gis {
-        gap: 10px;
-    }
     
     .project-other-images-project1 {
         grid-template-columns: 1fr;
@@ -4597,17 +4647,17 @@ form {
         height: auto;
     }
     
-    .project-dogcat {
-        display: grid;
-    }
-    
     .project-dogcat .project-dogcat-list {
         margin: 10px 0 0 0;
     }
     
     .project-dogcat p {
         text-align: justify;
-        margin: 10px 0 0 0;
+        margin: 0;
+    }
+    
+    .project-dogcat h2 {
+        margin: 0;
     }
     
     .project-dogcat-image2 {
@@ -4621,6 +4671,10 @@ form {
     
     .project-dogcat p:last-child {
          margin: 0; 
+    }
+    
+    .project-dogcat .project-dogcat-list li ul li {
+        margin: 5px 0 0 15px;
     }
     
     .project-other-images-project2 p {
@@ -4673,6 +4727,18 @@ form {
         width: 100%;
     }
     
+    .project-diabetes .paragraf-header,
+    .project-house .paragraf-header,
+    .project-titanic .paragraf-header {
+        margin: 0;
+        text-align: left;
+    }
+    
+    .project-diabetes h2,
+    .project-diabetes p {
+        margin: 0;
+    }
+    
     .project-diabetes .project-diabetes-image5 {
         width: 90%;
         height: auto;
@@ -4682,9 +4748,19 @@ form {
         justify-self: center;
     }
     
+    .project-ownweb,
+    .project-gis,
+    .project-dogcat,
     .project-diabetes,
-    .project-logo {
+    .project-logo,
+    .project-house,
+    .project-titanic,
+    .project-gis,
+    .project-wedding,
+    .project-scraping,
+    .project-password {
         display: grid;
+        gap: 10px;
     }
     
     .project-logo-image8 {
@@ -4703,10 +4779,66 @@ form {
         justify-self: center;
     }
         
+    .project-description .copyright {
+        margin: 15px 0 0 0;
+    }
     
+    .project-house h2,
+    .project-house p {
+        margin: 0;
+    }
     
-    
+    .project-house img,
+    .project-titanic img {
+        width: 90%;
+        height: auto;
+        float: none;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+    }
 
+    .project-titanic h2,
+    .project-titanic p {
+        margin: 0;
+    }
+    
+    .project-gis h2,
+    .project-gis p {
+        margin: 0;
+    }
+    
+    .project-logo h2,
+    .project-logo p {
+        margin: 0;
+    }
+    
+    .project-wedding h2,
+    .project-wedding p {
+        margin: 0;
+    }
+    
+    .project-ownweb h2,
+    .project-ownweb p {
+        margin: 0;
+    }
+    
+    .project-scraping h2,
+    .project-scraping p {
+        margin: 0;
+    }
+    
+    .project-password h2,
+    .project-password p {
+        margin: 0;
+    }
+    
+    
+    .scroll-up {
+        height: 25px;
+        width: 25px;
+    }
+    
     /* ---------------------------------------  Contact  --------------------------------------- */
 
     .contact-list {
