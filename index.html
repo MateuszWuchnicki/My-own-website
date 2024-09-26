@@ -164,11 +164,11 @@
             <!-- -------------------------------- PROJEKT 1 -------------------------------- -->
 
             <div id="designModal1" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
-                            <h1>Narzędzie partycymacyjne &ndash; geoankieta</h1>
+                            <h1 data-key="model1_1">Narzędzie partycypacji społecznej &ndash; geoankieta</h1>
                         </div>
                         <div class="project-header-item">
                             <button class="arrow-button" data-modal="designModal11">
@@ -189,7 +189,7 @@
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
-                                <h2>Szczegóły projektu</h2>
+                                <h2 data-key="model_all1">Szczegóły projektu</h2>
                             </div>
 
                             <div class="list-information detail-item-center">
@@ -197,27 +197,27 @@
                                     <div class="info-element">
                                         <img src="assets/icons/idea.png" alt="Kategoria">
                                     </div>
-                                    <div class="info-element info-category">Kategoria:</div>
-                                    <div class="info-element info-text">Projekty GIS, Front-End web development</div>
+                                    <div class="info-element info-category" data-key="model_all2">Kategoria:</div>
+                                    <div class="info-element info-text" data-key="model_all3">Projekty GIS, Front-End web development</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/schedule.png" alt="Kalendarz">
                                     </div>
-                                    <div class="info-element info-category">Data:</div>
-                                    <div class="info-element info-text">Luty 2016</div>
+                                    <div class="info-element info-category" data-key="model_all4">Data:</div>
+                                    <div class="info-element info-text" data-key="model1_2">Luty 2016</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/design.png" alt="Pobierane">
                                     </div>
-                                    <div class="info-element info-category">Design:</div>
+                                    <div class="info-element info-category" data-key="model_all5">Design:</div>
                                     <div class="info-element info-text">Mateusz Wuchnicki</div>
                                 </div>
                             </div>
 
                             <div class="details-header detail-item-center">
-                                <h2>Technologia</h2>
+                                <h2 data-key="model_all6">Technologia</h2>
                             </div>
 
                             <div class="list-technologies detail-item-center">
@@ -232,7 +232,7 @@
 
                             <button class="cv-button-project detail-item-center">
                                 <a href="https://github.com/MateuszWuchnicki/Participatory-tool-geosurvey" target="_blank" rel="noopener noreferrer">
-                                    <p>Zobacz projekt</p>
+                                    <p data-key="model_all7">Zobacz projekt</p>
                                     <img src="assets/icons/open_in_new2_w.png" alt="open">
                                 </a>
                             </button>
@@ -241,28 +241,28 @@
                     </div>
 
                     <div class="project-description project-gis">
-                        <h2>Opis projektu</h2>
-                        <p class="project9-first-paragraf">Prezentowany projekt to moja praca inżynierska pod tytułem „Aplikacja mapowa z funkcjonalnością geo-kwestionariusza – szablon portalu geoinformacyjnego”.</p>
-                        <p>Jest to aplikacja internetowa będąca kreatorem portalu geoinformacyjnego umożliwiająca stworzenie dowolnej ankiety w oparciu o dane przestrzenne z podkładem mapowym. Została ona wykorzystana w projekcie naukowym finansowanym przez Narodowe Centrum Nauki pod tytułem "Partycypacyjny paradygmat planowania przestrzennego - identyfikacja stanu oraz budowa modelu partycypacji w planowaniu przestrzennym w polskim dużym mieście" o numerze: 2014/15/B/HS4/00839 kierowanym przez prof. dr hab Jacka Kotusa.</p>
+                        <h2 data-key="model_all8">Opis projektu</h2>
+                        <p class="project9-first-paragraf" data-key="model1_3">Prezentowany projekt to moja praca inżynierska pod tytułem „Aplikacja mapowa z funkcjonalnością geo&ndash;kwestionariusza &ndash; szablon portalu geoinformacyjnego”.</p>
+                        <p data-key="model1_4">Jest to aplikacja internetowa będąca kreatorem portalu geoinformacyjnego umożliwiająca stworzenie dowolnej ankiety w oparciu o dane przestrzenne z podkładem mapowym. Została ona wykorzystana w projekcie naukowym finansowanym przez Narodowe Centrum Nauki pod tytułem "Partycypacyjny paradygmat planowania przestrzennego &ndash; identyfikacja stanu oraz budowa modelu partycypacji w planowaniu przestrzennym w polskim dużym mieście" o numerze: 2014/15/B/HS4/00839 kierowanym przez prof. dr hab Jacka Kotusa.</p>
 
                         <div class="project9-element-small">
                             <div class="project9-item-small">
                                 <img src="assets/images/portfolio9_5.jpg" alt="gis" class="image-item-project9-small left">
                             </div>
                             <div class="project9-item-small">
-                                <p class="project9-paragraf"><span>Generator geoankiety</span></p>
-                                <p>Jest to dashboard dla administratora geoankiety. Pozwala stworzyć geoankietę na dowolny temat, w której kluczowym jest zebranie informacji przestrzennej od ankietowanych. Generator pozwala na ustawienie tytuły zamej ankiety. Pozwala utworzyć tekst powitalny i podziękowanie za udział w ankiecie. Administator ma możliwość wyboru ile pytań będzie w geoankiecie oraz jakiego typu będzie odpowiedź. Czy będzie to zaznaczenie punktu / konkretnej lokalizacji za pomocą punktu, czy za pośrednictwem linii łamanej lub obszaru / poligonu, który zarusuje ankietowany. Aby korespondent mógł odróżnić oznaczenia na mapie, administrator może ustawić różny kolor dla poszczególnych pytań. Koleją opcją jest wybranie podkładu mapowego jaki będzie wyświetlał się w ankiecie oraz przybliżenia startowego. Dzięki temu może ograniczyć obszar możliwy do udzielenia odpowiedzi.</p>
-                                <p>Po kliknięciu w przycisk <span>GENERUJ GEOANKIETĘ</span> administrator otrzymuje informacje czy wszystkei dane zostały prawidłowo wypełnione oraz odnośnik do gotowej geoankiety.</p>
-                                <p>Cały generator jest połączony z bazą SQL, w której zapisywane są wszystkie ustawienia administratowa.</p>
+                                <p class="project9-paragraf" data-key="model1_5"><span>Generator geoankiety</span></p>
+                                <p data-key="model1_6">Jest to dashboard dla administratora geoankiety. Pozwala stworzyć geoankietę na dowolny temat, w której kluczowym jest zebranie informacji przestrzennej od ankietowanych. Generator pozwala na ustawienie tytułu samej ankiety oraz umożliwia utworzenie tekstu powitalnego i podziękowania za udział w ankiecie. W czwartym kroku administator ma możliwość określenia ile pytań będzie w geoankiecie oraz jakiego typu będzie do nich odpowiedź. Osoba biorąca udział w badaniu będzie miała możliwość udzielenia odpowiedzi na zadanie pytanie poprzez zaznaczenie konkretnej lokalizacji przy użyciu punktu, linii łamanej lub poligonu. Aby korespondent mógł odróżnić zaznaczenia na mapie, administrator może ustawić różny kolor dla poszczególnych pytań i odpowiedzi. Koleją opcją jest wybranie podkładu mapowego jaki będzie wyświetlał się w geoankiecie oraz przybliżenia startowego, co pozwoli zawęzić obszar na mapie, w którym możliwe będzie udzielenie odpowiedzi.</p>
+                                <p data-key="model1_7">Po kliknięciu w przycisk <span>GENERUJ GEOANKIETĘ</span>, administrator otrzymuje informacje czy wszystkie dane zostały prawidłowo wypełnione oraz odnośnik do gotowej geoankiety.</p>
+                                <p data-key="model1_8">Cały generator jest połączony z bazą SQL, w której zapisywane są wszystkie ustawienia administratora.</p>
                             </div>
                         </div>
 
                         <div class="project9-element-right">
                             <div class="project9-item">
-                                <p class="project9-paragraf"><span>Panel logowania</span></p>
-                                <p>Administrator ma możliwość utworzenia dowolnej liczby kont, które będą miały dostęp do pytań zawartych w geoankiecie. Konta należy utworzyć bezpośrednio w dedykowanej bazie danych SQL. Każdy ankietowany przed przystąpieniem będzie musiał najpierw prowadzić dane do logowania.</p>
-                                <p>Dzięki temu rozwiązaniu administrator geoankiety ma możliwość sprawdzenia odpowiedzi danej osoby.</p>
-                                <p>Jeśli projektankt geoankiety uzna, że odpowiedzi na pytania mają być anonimowe, ma możliwość zrezygnowania z panelu logowania.</p>
+                                <p class="project9-paragraf" data-key="model1_9"><span>Panel logowania</span></p>
+                                <p data-key="model1_10">Administrator ma możliwość utworzenia dowolnej liczby kont, które będą miały dostęp do pytań zawartych w geoankiecie. Konta należy utworzyć bezpośrednio w dedykowanej bazie danych SQL. Każdy ankietowany przed przystąpieniem będzie musiał najpierw prowadzić dane do logowania.</p>
+                                <p data-key="model1_11">Dzięki temu rozwiązaniu administrator geoankiety ma możliwość sprawdzenia odpowiedzi danej osoby.</p>
+                                <p data-key="model1_12">Jeśli projektankt geoankiety uzna, że odpowiedzi na pytania mają być anonimowe, ma możliwość zrezygnowania z panelu logowania.</p>
                             </div>
                             <div class="project9-item">
                                 <img src="assets/images/portfolio9_1.jpg" alt="gis" class="image-item-project9 right">
@@ -274,17 +274,17 @@
                                 <img src="assets/images/portfolio9_2.jpg" alt="gis" class="image-item-project9 left">
                             </div>
                             <div class="project9-item">
-                                <p class="project9-paragraf"><span>Panel powitalny</span></p>
-                                <p>To panel rozpoczynający uczestnictwo w geoankiecie. Korespondent zostaje wprowadzony w tematykę badania w jakim bierze ucział. Tekst powitalny został przygotowany na etapie generowania geoankiety przez administratowa.</p>
-                                <p>Po kliknięciu w przcisk <span>Rozpocznij badanie</span> korespondent zostanie przesiony do przygotowanych pytań. W prawym górnym rogu mamy informację jaka osoba jest zalogowana do geoankiety. Istnieje wórnież możliwość zrezygnowania z udziału poprzez wylogowanie się.</p>
+                                <p class="project9-paragraf" data-key="model1_13"><span>Panel powitalny</span></p>
+                                <p data-key="model1_14">To panel rozpoczynający uczestnictwo w geoankiecie. Korespondent zostaje wprowadzony w tematykę badania w jakim bierze ucział. Tekst powitalny został przygotowany na etapie generowania geoankiety przez administratowa.</p>
+                                <p data-key="model1_15">Po kliknięciu w przcisk <span>Rozpocznij badanie</span>, korespondent zostanie przesiony do przygotowanych pytań. W prawym górnym rogu mamy informację jaka osoba jest zalogowana do geoankiety. Istnieje również możliwość zrezygnowania z udziału poprzez wylogowanie się.</p>
                             </div>
                         </div>
 
                         <div class="project9-element-right">
                             <div class="project9-item">
-                                <p class="project9-paragraf"><span>Geoankieta &ndash; odpowiadanie na pytania</span></p>
-                                <p>Panele z pokładem mapowym to kluczowe elementy geoankiety. To właśnie tutaj jest możliwość odpowiadania na przygotowane pytania. Liczba etapów generowana automatycznie i jest zależna od liczby przygotowanych pytań. Każdy etap zkłąda się z maksymalnie 2 pytań, aby zaznaczenia na mapie były przejrzyste dla korespondenta.</p>
-                                <p>Po udzieleniu odpowiedzi, poprzez zaznaczenie punktu lub narysowanie lini czy obszaru, osoba ma możliwość przejścia dalej aby kontunuować badanie. W każdym momencie może wrócić do porzedniego etapu i zmienić odpowiedź.</p>
+                                <p class="project9-paragraf" data-key="model1_16"><span>Geoankieta &ndash; odpowiadanie na pytania</span></p>
+                                <p data-key="model1_17">Panele z pokładem mapowym to kluczowe elementy geoankiety. To właśnie tutaj jest możliwość odpowiadania na przygotowane pytania. Liczba etapów generowana jest automatycznie oraz jest zależna od liczby przygotowanych pytań. Każdy etap zkłąda się z maksymalnie 2 pytań, aby zaznaczenia na mapie były przejrzyste dla korespondenta.</p>
+                                <p data-key="model1_18">Po udzieleniu odpowiedzi poprzez zaznaczenie punktu lub narysowanie lini czy obszaru, osoba ma możliwość przejścia dalej aby kontunuować badanie. W każdym momencie może wrócić do porzedniego etapu i zmienić odpowiedź.</p>
 
                             </div>
                             <div class="project9-item">
@@ -297,22 +297,29 @@
                                 <img src="assets/images/portfolio9_4.jpg" alt="gis" class="image-item-project9 left">
                             </div>
                             <div class="project9-item">
-                                <p class="project9-paragraf"><span>Panel końcowy</span></p>
-                                <p>Panel końcowy to ostatni element geoankiety, w którym użytkownik otrzymuje podziękowanie za udział w przygotowanym badaniu. Tekst tego podziękowania jest możliwy do personalizacji na etapie generatora geoankiety.</p>
-                                <p>Po kliknięciu w przycisk <span>Wyloguj się i zakończ badanie</span> udzielone odpowiedzi zostają zatwierdzone i przesłane do bazy danych SQL wraz z oznaczeniem, który użytkownik ich udzielił.</p>
+                                <p class="project9-paragraf" data-key="model1_19"><span>Panel końcowy</span></p>
+                                <p data-key="model1_20">Panel końcowy to ostatni element geoankiety, w którym użytkownik otrzymuje podziękowanie za udział w przygotowanym badaniu. Tekst tego podziękowania jest możliwy do personalizacji na etapie generatora geoankiety.</p>
+                                <p data-key="model1_21">Po kliknięciu w przycisk <span>Wyloguj się i zakończ badanie</span>, udzielone odpowiedzi zostają zatwierdzone i przesłane do bazy danych SQL wraz z oznaczeniem, który użytkownik ich udzielił.</p>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 2 -------------------------------- -->
             <div id="designModal2" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
-                            <h1>Klasyfikacja kotów i psów z użyciem CNN Keras</h1>
+                            <h1 data-key="model2_1">Klasyfikacja kotów i psów z użyciem CNN Keras</h1>
                         </div>
                         <div class="project-header-item">
                             <button class="arrow-button" data-modal="designModal1">
@@ -333,7 +340,7 @@
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
-                                <h2>Szczegóły projektu</h2>
+                                <h2 data-key="model_all1">Szczegóły projektu</h2>
                             </div>
 
                             <div class="list-information detail-item-center">
@@ -341,27 +348,27 @@
                                     <div class="info-element">
                                         <img src="assets/icons/category.png" alt="Kategoria">
                                     </div>
-                                    <div class="info-element info-category">Kategoria:</div>
+                                    <div class="info-element info-category" data-key="model_all2">Kategoria:</div>
                                     <div class="info-element info-text">Data Science, Deep Learning</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/schedule.png" alt="Kalendarz">
                                     </div>
-                                    <div class="info-element info-category">Data:</div>
-                                    <div class="info-element info-text">Maj 2024</div>
+                                    <div class="info-element info-category" data-key="model_all4">Data:</div>
+                                    <div class="info-element info-text" data-key="model2_2">Maj 2024</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/download.png" alt="Pobierane">
                                     </div>
-                                    <div class="info-element info-category">Dane z:</div>
+                                    <div class="info-element info-category" data-key="model_all9">Dane z:</div>
                                     <div class="info-element info-text"><a href="https://www.kaggle.com/c/dogs-vs-cats/overview">www.kaggle.com</a></div>
                                 </div>
                             </div>
 
                             <div class="details-header detail-item-center">
-                                <h2>Technologia</h2>
+                                <h2 data-key="model_all6">Technologia</h2>
                             </div>
 
                             <div class="list-technologies detail-item-center">
@@ -377,7 +384,7 @@
 
                             <button class="cv-button-project detail-item-center">
                                 <a href="https://github.com/MateuszWuchnicki/Cats-vs-Dogs/blob/main/Cats-vs-Dogs%20-%20image%20dataset%20for%20binary%20classification.ipynb" target="_blank" rel="noopener noreferrer">
-                                    <p>Zobacz projekt</p>
+                                    <p data-key="model_all7">Zobacz projekt</p>
                                     <img src="assets/icons/open_in_new2_w.png" alt="open">
                                 </a>
                             </button>
@@ -386,50 +393,57 @@
                     </div>
 
                     <div class="project-description project-dogcat">
-                        <h2>Opis projektu</h2>
-                        <p>Mojej rodzinie zawsze towarzyszyło jakieś zwierzę. Rozpoznanie jakie to jest zwierzę dla człowieka nie stanowi żadnego problemu, ale czy dla komputera też będzie to takie proste dysponując jedynie zdjęciem czworonoga? Interesując się machine learningiem nie mogłem obok takiego pytania przejść obojętnie. Postanowiłem sam sprawdzić czy oraz z jaką skutecznością komputer będzie w stanie rozpoznać czy na zdjęciu jest pies czy kot. Ostatecznie na koniec chciałem sprawdzić jaką kategorię przydzieli zwierzakom w mojej rodzinie.</p>
-                        <p>Klasyfikacja psów i kotów to jeden ze standardowych projektów głębokiego uczenia z zakresu widzenia komputerowego, który obejmuje klasyfikację realistycznych zdjęć na dwie kategorie. W trakcie realizacji projektu musiałem najpierw załadować i przygotować obrazy do celów treningowych, następnie rozdzielić zdjęcia na dane do celu szkolenia i walidacji. Kolejno, użyć ImageDataGenerator, aby rozszerzyć swój zbiór danych i ograniczyć nadmierne dopasowanie, opracować model CNN za pomocą biblioteki KARES i wybrać parametry aby poprawić wydajność modelu, ocenić wydajność modelu, zapisać i załadować model do dalszych prognoz, a na koniec dokonać klasyfikacji na własnych zwierzakach.</p>
-                        <p>Do realizacji projektu wykorzystałem zbiór danych obejmujący łącznie 25000 zdjęć przedstawiających psy i koty. Ten zbiór danych został po raz pierwszy wprowadzony na potrzeby konkursu Kaggle w 2013 roku.</p>
-                        <p>Zbiór danych jest dostępny
-                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data" target="_blank" rel="noopener noreferrer">tutaj</a> (około 865 MB).
-                        </p>
+                        <h2 data-key="model_all8">Opis projektu</h2>
+                        <p data-key="model2_3">Rozpoznanie i nazwanie zwierzęcia lub przedmiotu nie stanowi dla człowieka większego problemu. Jednak czy dla komputera będzie to równie proste, dysponując jedynie zdjęciem czworonoga? Jako, że interesuję się uczeniem maszynowym, nie mogłem przejść obok takiego pytania obojętnie. Postanowiłem sprawdzić czy oraz z jaką skutecznością komputer będzie w stanie rozpoznać gatunek zwięrzęcia przedstawiony na zdjęciu.</p>
+                        <p data-key="model2_4">Klasyfikacja psów i kotów to jeden ze standardowych projektów głębokiego uczenia z zakresu widzenia komputerowego, który obejmuje klasyfikację realistycznych zdjęć na dwie kategorie. W trakcie realizacji projektu musiałem najpierw załadować i przygotować obrazy do celów treningowych, a następnie rozdzielić zdjęcia na zbiór danych do celu szkolenia i walidacji. Kolejno, użyłem ImageDataGenerator, aby rozszerzyć swój zbiór danych i ograniczyć nadmierne dopasowanie. Opracowałem model CNN za pomocą biblioteki KERAS i wybrałem parametry aby poprawić jego wydajność. W następnym kroku oceniłem wydajność modelu, zapisałem i załadowałem model do dalszych prognoz, a na koniec dokonałem klasyfikacji na zwierzętach będących w mojej rodzinie.</p>
+                        <p data-key="model2_5">Do realizacji projektu wykorzystałem zbiór danych obejmujący łącznie 25000 zdjęć przedstawiających psy i koty. Ten zbiór danych został po raz pierwszy wprowadzony na potrzeby konkursu Kaggle w 2013 roku.</p>
+                        <p data-key="model2_6">Zbiór danych jest dostępny
+                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data" target="_blank" rel="noopener noreferrer">tutaj</a> (około 865 MB).</p>
                         <img src="assets/images/model1.png" alt="model" class="project-dogcat-image1">
                         <ul class="project-dogcat-list">
-                            <p>Aby dokonać klasyfikacji obrazów na dwie kategorie: psy i koty, zastosowałem do tego konwolucyjną sieć neuronową (CNN &ndash; convolutional neural network).</p>
-                            <p class="project-dogcat-bold">Architektura modelu:</p>
-                            <li>Warstwy:
+                            <p data-key="model2_7">Aby dokonać klasyfikacji obrazów na dwie kategorie: psy i koty, zastosowałem do tego konwolucyjną sieć neuronową (CNN &ndash; convolutional neural network).</p>
+                            <p class="project-dogcat-bold" data-key="model2_8">Architektura modelu:</p>
+                            <li><p data-key="model2_9">Warstwy:</p>
                                 <ul>
-                                    <li>Warstwa wejściowa składa się z warstwy Conv2D z 32 filtrami i funkcją aktywacji ReLU.</li>
-                                    <li>Model zawiera 3 bloki konwolucyjne z rosnącymi liczbą filtrów i aktywacją ReLU.</li>
-                                    <li>Każdy blok konwolucyjny zawiera normalizację wsadową (Batch Normalization), maksymalne próbkowanie (Max Pooling) (rozmiar siatki &#61; 2) i warstwę Dropout (0,2).</li>
-                                    <li>Warstwy w pełni połączone zawierają warstwę spłaszczającą (Flatten), warstwę Dense z 512 jednostkami i warstwę Dropout.</li>
-                                    <li>Warstwa wyjściowa to warstwa Dense z 2 jednostkami i aktywacją softmax.</li>
+                                    <li data-key="model2_10">Warstwa wejściowa składa się z warstwy Conv2D z 32 filtrami i funkcją aktywacji ReLU.</li>
+                                    <li data-key="model2_11">Model zawiera 3 bloki konwolucyjne z rosnącymi liczbą filtrów i aktywacją ReLU.</li>
+                                    <li data-key="model2_12">Każdy blok konwolucyjny zawiera normalizację wsadową (Batch Normalization), maksymalne próbkowanie (Max Pooling) (rozmiar siatki &#61; 2) i warstwę Dropout (0,2).</li>
+                                    <li data-key="model2_13">Warstwy w pełni połączone zawierają warstwę spłaszczającą (Flatten), warstwę Dense z 512 jednostkami i warstwę Dropout.</li>
+                                    <li data-key="model2_14">Warstwa wyjściowa to warstwa Dense z 2 jednostkami i aktywacją softmax.</li>
                                 </ul>
                             </li>
-                            <li>Komponenty:
+                            <li><p data-key="model2_15">Komponenty:</p>
                                 <ul>
-                                    <li>Warstwa wejściowa: Odbiera obrazy wejściowe do klasyfikacji.</li>
-                                    <li>Warstwy splotowe: Wyodrębniają cechy z obrazów za pomocą operacji konwolucyjnych.</li>
-                                    <li>Warstwy próbkowania: Zmniejszają przestrzenne wymiary obiektów. </li>
-                                    <li>Warstwa spłaszczająca: Przekształca mapy obiektów 2D na wektor 1D.</li>
-                                    <li>Warstwy w pełni połączone: Wykonują klasyfikację za pomocą gęsto połączonych warstw.</li>
-                                    <li>Warstwa wyjściowa: Dostarcza końcowe prawdopodobieństwa predykcji dla klas kota i psa.</li>
+                                    <li data-key="model2_16">Warstwa wejściowa: Odbiera obrazy wejściowe do klasyfikacji.</li>
+                                    <li data-key="model2_17">Warstwy splotowe: Wyodrębniają cechy z obrazów za pomocą operacji konwolucyjnych.</li>
+                                    <li data-key="model2_18">Warstwy próbkowania: Zmniejszają przestrzenne wymiary obiektów.</li>
+                                    <li data-key="model2_19">Warstwa spłaszczająca: Przekształca mapy obiektów 2D na wektor 1D.</li>
+                                    <li data-key="model2_20">Warstwy w pełni połączone: Wykonują klasyfikację za pomocą gęsto połączonych warstw.</li>
+                                    <li data-key="model2_21">Warstwa wyjściowa: Dostarcza końcowe prawdopodobieństwa predykcji dla klas kota i psa.</li>
                                 </ul>
                             </li>
                         </ul>
                         <img src="assets/images/model2.png" alt="model" class="project-dogcat-image2">
-                        <p>Z sukcesem zbudowaliśmy model głębokiej sieci neuronowej poprzez wdrożenie konwolucyjnej sieci neuronowej (CNN), który uzyskał ponad 6,8 mln parametrów uczących się. Przełożyło się to na uzyskanie bardzo dużej dokładności zaklasyfikowania obrazów na poziomie <span>około 94%</span> zarówno dla psów i kotów.</p>
+                        <p data-key="model2_22">Z sukcesem zbudowałem model głębokiej sieci neuronowej poprzez wdrożenie konwolucyjnej sieci neuronowej (CNN), który uzyskał ponad 6,8 mln parametrów uczących się. Przełożyło się to na uzyskanie bardzo dużej dokładności zaklasyfikowania obrazów na poziomie <span>około 94%</span> zarówno dla psów i kotów.</p>
+                        
+                        <div class="project-other-images-project2">
+                            <p data-key="model2_23">Po nauczeniu i walidacji modelu przyszedł czas na odpowiedź czy moje zwierzęta to odpowiednio psy i koty. Ostatecznie komputer potwierdził moje zdanie. <span>Pełen sukces.</span></p>
+                            <img src="assets/images/portfolio2_1.jpg" alt="" class="image-item-project2">
+                        </div>
                     </div>
-                    <div class="project-other-images-project2">
-                        <p>Po nauczeniu i walidacji modelu przyszedł czas na odpowiedź czy moje zwierzęta to odpowiednio psy i koty. Ostatecznie komputer potwierdził moje zdanie. <span>Pełen sukces.</span></p>
-                        <img src="assets/images/portfolio2_1.jpg" alt="" class="image-item-project2">
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
                     </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 3 -------------------------------- -->
             <div id="designModal3" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -532,12 +546,19 @@
                         </ul>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://www.freepik.com/author/macrovector">macrovector</a>z Freepik.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 4 -------------------------------- -->
             <div id="designModal4" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -635,12 +656,19 @@
                         <p>Opracowałem wiele modeli regresji, zarówno ich podstawowe wersje oraz wersje z wyszukanimy hiperparametrami. Najlepszym modelem okazał się <span>ElasticNet z hiperparametrami</span>, który uzyskał RMSE na poziomie <span>0.1169</span> oraz R-Squered na poziomie <span>0.915.</span></p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 5 -------------------------------- -->
             <div id="designModal5" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -749,16 +777,23 @@
                         <p>Po dogłębnym przeanalizowaniu wszystkich zmiennych oraz po wyczyszczeniu danych przystąpiłem do budowania modeli klasyfikacyjnych. W moim przypadku najlepszym modelem okazął się <span>VotingClassifier</span>. Modele osiągnął wynik cross-validacji na poziomie <span>około 83.6 %</span>.</p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/vectorpouch">vectorpouch</a>z Freepik.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
             <!-- -------------------------------- PROJEKT 6 -------------------------------- -->
 
             <div id="designModal6" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-header-item project-title">
-                            <h1>Własna strona - CV</h1>
+                            <h1 data-key="model6_1">Własna strona &ndash; CV</h1>
                         </div>
                         <div class="project-header-item">
                             <button class="arrow-button" data-modal="designModal5">
@@ -779,7 +814,7 @@
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
-                                <h2>Szczegóły projektu</h2>
+                                <h2 data-key="model_all1">Szczegóły projektu</h2>
                             </div>
 
                             <div class="list-information detail-item-center">
@@ -787,27 +822,27 @@
                                     <div class="info-element">
                                         <img src="assets/icons/idea.png" alt="Kategoria">
                                     </div>
-                                    <div class="info-element info-category">Kategoria:</div>
-                                    <div class="info-element info-text">Front-end web development</div>
+                                    <div class="info-element info-category" data-key="model_all2">Kategoria:</div>
+                                    <div class="info-element info-text">Front&ndash;end web development</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/schedule.png" alt="Kalendarz">
                                     </div>
-                                    <div class="info-element info-category">Data:</div>
-                                    <div class="info-element info-text">Stale aktualizowana</div>
+                                    <div class="info-element info-category" data-key="model_all4">Data:</div>
+                                    <div class="info-element info-text" data-key="model6_2">Stale aktualizowana</div>
                                 </div>
                                 <div class="info-item">
                                     <div class="info-element">
                                         <img src="assets/icons/design.png" alt="Design">
                                     </div>
-                                    <div class="info-element info-category">Design:</div>
+                                    <div class="info-element info-category" data-key="model_all5">Design:</div>
                                     <div class="info-element info-text">Mateusz Wuchnicki</div>
                                 </div>
                             </div>
 
                             <div class="details-header detail-item-center">
-                                <h2>Technologia</h2>
+                                <h2 data-key="model_all6">Technologia</h2>
                             </div>
 
                             <div class="list-technologies detail-item-center">
@@ -823,7 +858,7 @@
                             
                             <button class="cv-button-project detail-item-center">
                                 <a href="https://github.com/MateuszWuchnicki/My-own-website" target="_blank" rel="noopener noreferrer">
-                                    <p>Zobacz projekt</p>
+                                    <p data-key="model_all7">Zobacz projekt</p>
                                     <img src="assets/icons/open_in_new2_w.png" alt="open">
                                 </a>
                             </button>
@@ -832,29 +867,36 @@
                     </div>
 
                     <div class="project-description project-ownweb">
-                        <h2>Opis projektu</h2>
-                        <p>Pomysł utworzenia własnej strony internetowej w stylu portfolio narodził się już dawno temu. Impulsem do działania była m.in. chęć podzielenia się z innymi osobami samodzielnie zrealizowanymi projektami z różnych kategorii. Z uwagi na to, że ciężko jest przedstawić swoje dokonania na kartce papieru w formacie A4, postanowiłem zbudować tę stronę. Jest ona swego rodzaju rozbudowanym interaktywnym życiorysem, w którym umieściłem informacje o sobie, swoje doświadczenie zawodowe i wykształcenie, a także projekty wraz z odnośnikami do ich kodu źródłowego.</p>
-                        <p>Strona jest responsywna. Starałem się przygotować ją tak aby prawidłowo uruchamiała się na każdym urządzeniu. Planuję ją stale aktualizować wszystkie informacje jakie się tutaj znajdują oraz dodawać nowe projekty zarówno ukończone jak i w trakcie realizacji.</p>
-                        <p>Niedługo na stronie pojawi się nowa funkcjonalność, mianowicie możliwość uruchomienia strony w wersji języku angielskim. W przyszłości możliwe, że pojawi się nowa pozycja w menu – <span>Blog</span>, w którym będę umieszczał ciekawe nowinki z branży GIS oraz Data Science czy też popularnego teraz AI.</p>
-                        <p>Jeśli chcesz się ze mną skontaktować zapraszam do sekcji <span>Kontakt</span>.
-                        </p>
+                        <h2 data-key="model_all8">Opis projektu</h2>
+                        <p data-key="model6_3">Pomysł utworzenia własnej strony internetowej w stylu portfolio narodził się już dawno temu. Impulsem do działania była m.in. chęć podzielenia się z innymi osobami samodzielnie zrealizowanymi projektami z różnych kategorii. Z uwagi na to, że ciężko jest przedstawić swoje dokonania na kartce papieru w formacie A4, postanowiłem zbudować tę stronę. Jest ona swego rodzaju rozbudowanym interaktywnym życiorysem, w którym umieściłem informacje o sobie, zdobytym doświadczeniu zawodowym i wykształceniu, a także projekty wraz z odnośnikami do ich kodu źródłowego.</p>
+                        <p data-key="model6_4">Strona jest responsywna. Starałem się przygotować ją tak aby prawidłowo uruchamiała się na każdym urządzeniu. Planuję stale aktualizować wszystkie informacje jakie się tutaj znajdują oraz dodawać nowe projekty, zarówno ukończone jak i w trakcie realizacji.</p>
+                        <p data-key="model6_5">Niedawno na stronie pojawiła się nowa funkcjonalność, mianowicie możliwość uruchomienia strony w wersji w języku angielskim. W przyszłości możliwe, że pojawi się nowa pozycja w menu &ndash; <span>Blog</span>, w którym będę umieszczał ciekawe nowinki z branży GIS oraz Data Science czy też popularnego teraz AI.</p>
+                        <p data-key="model6_6">Jeśli chcesz się ze mną skontaktować zapraszam do sekcji <span>Kontakt</span>.</p>
+                        
+                        <div class="project-other-images-project1">
+                            <img src="assets/images/portfolio1_home.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_about.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_resume.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_skills.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_portfolio.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_contact.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_detail.jpg" alt="" class="image-item-project1">
+                        </div>
                     </div>
-                    <div class="project-other-images-project1">
-                        <img src="assets/images/portfolio1_home.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_about.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_resume.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_skills.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_portfolio.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_contact.jpg" alt="" class="image-item-project1">
-                        <img src="assets/images/portfolio1_detail.jpg" alt="" class="image-item-project1">
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
                     </div>
+                    
                 </div>
             </div>
 
             
             <!-- -------------------------------- PROJEKT 7 -------------------------------- -->
             <div id="designModal7" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -932,14 +974,22 @@
                         <p>Projekt realizowany w ramach utrwalania wiedzy zdobytej w trakcie Bootcampu Data Science PRO. Jest to mały projekt typu web scraping, którego głównym celem było automatyczne pobranie danych przy użyciu języka python oraz biblioteki BeautifulSoup.</p>
                         <p>Z uwagi na moje zainteresowanie dbaniem o własne finanse osobiste oraz inwestowaniem w różne aktywa, w tym kryptowaluty, za cel obrałem stronę internetową &ndash; <a href="https://crypto.com/price/pl" target="_blank" rel="noopener noreferrer">www.crypto.com</a>, która zawiera aktualny kurs wszystkich kryprowalut.</p>
                         <p>Projekt zakładał pobranie danych ze strony dla 500 pierwszych coinów oraz zapisanie ich do arkusza kalkulacyjnego Excel.</p>
+                        <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
 
             <!-- -------------------------------- PROJEKT 8 -------------------------------- -->
             <div id="designModal8" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -1039,14 +1089,22 @@
                         </ul>
                         <p>Wygenerowa hasła trafiają do pliku. W przyszłości można by rozbudować tę opcję zastępując zwykły plik TXT np. bazą danych chronioną hasłem.</p>
                         <p>Nie chciałem aby ten generator był klasycznym projektem jakich wiele. Dlatego postanowiłem utworzyć tez w pythonie do niego proste GUI.</p>
+                        <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 9 -------------------------------- -->
 
             <div id="designModal9" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -1140,19 +1198,27 @@
                                 </ul>
                             </li>
                         </ul>
+                        
+                        <div class="project-other-images-project3">
+                            <img src="assets/images/portfolio3_1.jpg" alt="" class="image-item-project3">
+                            <img src="assets/images/portfolio3_2.jpg" alt="" class="image-item-project3">
+                            <img src="assets/images/portfolio3_3.jpg" alt="" class="image-item-project3">
+                        </div>
                     </div>
-                    <div class="project-other-images-project3">
-                        <img src="assets/images/portfolio3_1.jpg" alt="" class="image-item-project3">
-                        <img src="assets/images/portfolio3_2.jpg" alt="" class="image-item-project3">
-                        <img src="assets/images/portfolio3_3.jpg" alt="" class="image-item-project3">
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
                     </div>
+                    
                 </div>
             </div>
 
             <!-- -------------------------------- PROJEKT 10 -------------------------------- -->
 
             <div id="designModal10" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -1246,19 +1312,26 @@
                                 </ul>
                             </li>
                         </ul>
+                        <div class="project-other-images-project4">
+                            <img src="assets/images/portfolio4_1.jpg" alt="" class="image-item-project4">
+                            <img src="assets/images/portfolio4_2.jpg" alt="" class="image-item-project4">
+                            <img src="assets/images/portfolio4_3.jpg" alt="" class="image-item-project4">
+                        </div>
                     </div>
-                    <div class="project-other-images-project4">
-                        <img src="assets/images/portfolio4_1.jpg" alt="" class="image-item-project4">
-                        <img src="assets/images/portfolio4_2.jpg" alt="" class="image-item-project4">
-                        <img src="assets/images/portfolio4_3.jpg" alt="" class="image-item-project4">
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
                     </div>
+                    
                 </div>
             </div>
 
 <!-- -------------------------------- PROJEKT 11 -------------------------------- -->
 
             <div id="designModal11" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-scroll">
 
                     <div class="project-header">
                         <div class="project-title">
@@ -1335,6 +1408,13 @@
                         <p>Projekt dotyczył stworzenie nowego Loga oraz wizytówek dla firmy świadczącej usługi geodezyjnej.</p>
                         <p>Logotyp miał zawierać imię i nazwisko osoby prowadzącej jednoosobową działalność gospodarczą oraz jednoznacznie kojarzyć się z geodezją. Dlatego <span>litera A</span> przedstawia instrument geodezyjny - tachimetr, natomiast <span>litera I</span> została wykonana na wzrór łaty geodezyjnej.</p>
                     </div>
+                    
+                    <div class="scroll-up">
+                        <button id="scrollToTopButton" class="scroll-top">
+                            <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -1351,7 +1431,7 @@
             <section id="section-home" class="section-home background-section">
                 <h2><span data-key="home1">Cześć, jestem</span></h2>
                 <h1 data-key="home2">Mateusz Wuchnicki</h1>
-                <p class="text-home" data-key="home3">Specjalista ds. GIS, Analityk danych&#10;oraz pasjonat Data Science i uczenia maszynowego&#10;z Krakowa, Polska</p>
+                <p class="text-home" data-key="home3">Specjalista ds. GIS, Analityk danych&#10;oraz pasjonat Data Science i&nbsp;uczenia&nbsp;maszynowego&#10;z Krakowa, Polska</p>
                 <div class="cv-files">
                     <a href="assets\CV\Mateusz_Wuchnicki_CVpl.pdf" download>
                         <button class="cv-button-home">
@@ -1585,7 +1665,7 @@
                                 <p data-key="resume54">Intensywny, połroczny kurs Data Science, dzięki któremu sprawnie posługuję się językiem python oraz jego bibliotekami służącymi do analizy danych.</p>
                                 <p class="obligation" data-key="resume55">Nabyte umiejętności:</p>
                                 <ul>
-                                    <li data-key="resume56">Python: NumPy, Pandas; matplotlib, seaborn, scikit-learn, Keras</li>
+                                    <li data-key="resume56">Python: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Keras</li>
                                     <li data-key="resume57">Jupyter Notebook (Linux), PyCharm, Google Colaborator, SQL, kontrola wersji Git</li>
                                     <li data-key="resume58">Metody uczenia maszynowego oraz techniki modelowania: szeregi czasowe, regresja liniowa i logistyczna, SVM, drzewa decyzyjne, lasy losowe, PCA, analiza skupień, algorytm XGBoost</li>
                                     <li data-key="resume59">Pozyskiwanie i procesowanie danych z różnych źródeł: .csv, .xml, .json</li>
@@ -1604,7 +1684,7 @@
                             <div class="courses-item description">
                                 <p><span data-key="resume55">Nabyte umiejętności:</span></p>
                                 <ul>
-                                    <li data-key="resume66">Python: NumPy, Pandas, matplotlib, scikit-learn</li>
+                                    <li data-key="resume66">Python: NumPy, Pandas, Matplotlib, Scikit-learn</li>
                                     <li data-key="resume67">Jupyter Notebook (Linux), PyCharm</li>
                                     <li data-key="resume68">Metody uczenia maszynowego: regresja liniowa i logistyczna, drzewa decyzyjne i lasy losowe</li>
                                 </ul>
@@ -2135,7 +2215,7 @@
                                 <div class="title-and-button">
                                     <div class="portfolio-info-text">
                                         <h2 data-key="portfolio7">Projekty GIS, Front&ndash;End</h2>
-                                        <h1 data-key="portfolio8">Narzędzie partycymacyjne &ndash; geoankieta</h1>
+                                        <h1 data-key="portfolio8">Narzędzie partycypacji społecznej &ndash; geoankieta</h1>
                                     </div>
                                     <div class="portfolio-button">
                                         <button class="cv-button" data-modal="designModal1" data-key="portfolio9">OTWÓRZ</button>
@@ -2540,7 +2620,8 @@
     <script src="assets/scripts/language.js"></script>
     <script src="assets/scripts/language2.js"></script>
 
-
+    <!-- Link to the external JavaScript file -->
+    <script src="assets/scripts/scroll_modal.js"></script>
 
 </body>
 
