@@ -22,7 +22,7 @@
         })();
     </script>
 -->
-<!--    <script defer src="assets/scripts/email.js"></script>-->
+    <!--    <script defer src="assets/scripts/email.js"></script>-->
     <script defer src="assets/scripts/email.js"></script>
 
 
@@ -66,10 +66,10 @@
             <div class="profile-pic">
                 <img src="assets/images/profile_photo.jpg" alt="Profile Picture">
             </div>
-            
+
             <div class="menu-toggle">
                 <div class="logo"><img src="assets/icons/logo.png" alt="home-pic"></div>
-                
+
                 <div class="languages">
                     <span class="PL">
                         <img src="assets/icons/pl.png" alt="PL">
@@ -79,7 +79,7 @@
                         <img src="assets/icons/eng.png" alt="EN">
                     </span>
                 </div>
-               
+
                 <div onclick=hideSidebar() class="closeButton" id="menuToggle">
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#1D3557">
                         <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
@@ -162,6 +162,16 @@
         <div class="content">
 
             <!-- -------------------------------- PROJEKT 1 -------------------------------- -->
+                        
+            <!-- The Image Modal -->
+            <div id="m-image" class="modal-image">
+                <div class="modal-image-content content-modal1">
+                    <div class="close-image">
+                        <img src="assets/icons/close.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/close_hover.png">
+                    </div>
+                    <img id="xl-image" class="larger-image">
+                </div>
+            </div>
 
             <div id="designModal1" class="modal">
                 <div class="modal-content" id="modal-scroll">
@@ -185,7 +195,7 @@
 
                     <div class="project-details">
                         <div class="project-main-image project-details-item">
-                            <img src="assets/images/portfolio9.jpg" alt="project9">
+                            <img src="assets/images/portfolio9.jpg" alt="project9" class="thumbnail">
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
@@ -247,7 +257,7 @@
 
                         <div class="project9-element-small">
                             <div class="project9-item-small">
-                                <img src="assets/images/portfolio9_5.jpg" alt="gis" class="image-item-project9-small left">
+                                <img src="assets/images/portfolio9_5.jpg" alt="gis" class="image-item-project9-small left thumbnail">
                             </div>
                             <div class="project9-item-small">
                                 <p class="project9-paragraf" data-key="model1_5"><span>Generator geoankiety</span></p>
@@ -265,13 +275,13 @@
                                 <p data-key="model1_12">Jeśli projektankt geoankiety uzna, że odpowiedzi na pytania mają być anonimowe, ma możliwość zrezygnowania z panelu logowania.</p>
                             </div>
                             <div class="project9-item">
-                                <img src="assets/images/portfolio9_1.jpg" alt="gis" class="image-item-project9 right">
+                                <img src="assets/images/portfolio9_1.jpg" alt="gis" class="image-item-project9 right thumbnail">
                             </div>
                         </div>
 
                         <div class="project9-element-left">
                             <div class="project9-item">
-                                <img src="assets/images/portfolio9_2.jpg" alt="gis" class="image-item-project9 left">
+                                <img src="assets/images/portfolio9_2.jpg" alt="gis" class="image-item-project9 left thumbnail">
                             </div>
                             <div class="project9-item">
                                 <p class="project9-paragraf" data-key="model1_13"><span>Panel powitalny</span></p>
@@ -288,13 +298,13 @@
 
                             </div>
                             <div class="project9-item">
-                                <img src="assets/images/portfolio9_3.jpg" alt="gis" class="image-item-project9 right">
+                                <img src="assets/images/portfolio9_3.jpg" alt="gis" class="image-item-project9 right thumbnail">
                             </div>
                         </div>
 
                         <div class="project9-element-left">
                             <div class="project9-item">
-                                <img src="assets/images/portfolio9_4.jpg" alt="gis" class="image-item-project9 left">
+                                <img src="assets/images/portfolio9_4.jpg" alt="gis" class="image-item-project9 left thumbnail">
                             </div>
                             <div class="project9-item">
                                 <p class="project9-paragraf" data-key="model1_19"><span>Panel końcowy</span></p>
@@ -303,13 +313,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -398,12 +408,14 @@
                         <p data-key="model2_4">Klasyfikacja psów i kotów to jeden ze standardowych projektów głębokiego uczenia z zakresu widzenia komputerowego, który obejmuje klasyfikację realistycznych zdjęć na dwie kategorie. W trakcie realizacji projektu musiałem najpierw załadować i przygotować obrazy do celów treningowych, a następnie rozdzielić zdjęcia na zbiór danych do celu szkolenia i walidacji. Kolejno, użyłem ImageDataGenerator, aby rozszerzyć swój zbiór danych i ograniczyć nadmierne dopasowanie. Opracowałem model CNN za pomocą biblioteki KERAS i wybrałem parametry aby poprawić jego wydajność. W następnym kroku oceniłem wydajność modelu, zapisałem i załadowałem model do dalszych prognoz, a na koniec dokonałem klasyfikacji na zwierzętach będących w mojej rodzinie.</p>
                         <p data-key="model2_5">Do realizacji projektu wykorzystałem zbiór danych obejmujący łącznie 25000 zdjęć przedstawiających psy i koty. Ten zbiór danych został po raz pierwszy wprowadzony na potrzeby konkursu Kaggle w 2013 roku.</p>
                         <p data-key="model2_6">Zbiór danych jest dostępny
-                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data" target="_blank" rel="noopener noreferrer">tutaj</a> (około 865 MB).</p>
-                        <img src="assets/images/model1.png" alt="model" class="project-dogcat-image1">
+                            <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset/data" target="_blank" rel="noopener noreferrer">tutaj</a> (około 865 MB).
+                        </p>
+                        <img src="assets/images/model1.png" alt="model" class="project-dogcat-image1 thumbnail">
                         <ul class="project-dogcat-list">
                             <p data-key="model2_7">Aby dokonać klasyfikacji obrazów na dwie kategorie: psy i koty, zastosowałem do tego konwolucyjną sieć neuronową (CNN &ndash; convolutional neural network).</p>
                             <p class="project-dogcat-bold" data-key="model2_8">Architektura modelu:</p>
-                            <li><p data-key="model2_9">Warstwy:</p>
+                            <li>
+                                <p data-key="model2_9">Warstwy:</p>
                                 <ul>
                                     <li data-key="model2_10">Warstwa wejściowa składa się z warstwy Conv2D z 32 filtrami i funkcją aktywacji ReLU.</li>
                                     <li data-key="model2_11">Model zawiera 3 bloki konwolucyjne z rosnącymi liczbą filtrów i aktywacją ReLU.</li>
@@ -412,7 +424,8 @@
                                     <li data-key="model2_14">Warstwa wyjściowa to warstwa Dense z 2 jednostkami i aktywacją softmax.</li>
                                 </ul>
                             </li>
-                            <li><p data-key="model2_15">Komponenty:</p>
+                            <li>
+                                <p data-key="model2_15">Komponenty:</p>
                                 <ul>
                                     <li data-key="model2_16">Warstwa wejściowa: Odbiera obrazy wejściowe do klasyfikacji.</li>
                                     <li data-key="model2_17">Warstwy splotowe: Wyodrębniają cechy z obrazów za pomocą operacji konwolucyjnych.</li>
@@ -423,21 +436,21 @@
                                 </ul>
                             </li>
                         </ul>
-                        <img src="assets/images/model2.png" alt="model" class="project-dogcat-image2">
+                        <img src="assets/images/model2.png" alt="model" class="project-dogcat-image2 thumbnail">
                         <p data-key="model2_22">Z sukcesem zbudowałem model głębokiej sieci neuronowej poprzez wdrożenie konwolucyjnej sieci neuronowej (CNN), który uzyskał ponad 6,8 mln parametrów uczących się. Przełożyło się to na uzyskanie bardzo dużej dokładności zaklasyfikowania obrazów na poziomie <span>około 94%</span> zarówno dla psów i kotów.</p>
-                        
+
                         <div class="project-other-images-project2">
                             <p data-key="model2_23">Po nauczeniu i walidacji modelu przyszedł czas na odpowiedź czy moje zwierzęta to odpowiednio psy i koty. Ostatecznie komputer potwierdził moje zdanie. <span>Pełen sukces.</span></p>
-                            <img src="assets/images/portfolio2_1.jpg" alt="" class="image-item-project2">
+                            <img src="assets/images/portfolio2_1.jpg" alt="" class="image-item-project2 thumbnail">
                         </div>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -535,7 +548,7 @@
                         <p>Głównym celem tego projektu jest odpowiedź na pytanie:</p>
                         <p class="question">Czy pytania z ankiety BRFSS mogą dostarczyć dokładnych przewidywań dotyczących tego, czy dana osoba choruje na cukrzycę?</p>
                         <p class="paragraf-header">Wyniki:</p>
-                        <img src="assets/images/portfolio5_1.png" alt="diabetes_results" class="project-diabetes-image5">
+                        <img src="assets/images/portfolio5_1.png" alt="diabetes_results" class="project-diabetes-image5 thumbnail">
                         <p>Najlepszy wynik dla każdej metryki został osiągnięty przez <span>XGBoostClassifier</span> wyuczony na nadpróbkowanym zbiorze danych.</p>
                         <ul>
                             <li><span>Dokładność (Accuracy):</span> Wynik <span class="number">91,8%</span> na zbiorze testowym - to bardzo dobry rezultat. Model błędnie sklasyfikował jedynie 8% przypadków spośród wszystkich klasyfikacji.</li>
@@ -546,13 +559,13 @@
                         </ul>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://www.freepik.com/author/macrovector">macrovector</a>z Freepik.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -651,18 +664,18 @@
                             <li>Liczba sypialni, łazienek czy kuchni oraz ich jakość</li>
                             <li>Powierzchnia basenu i wiele innych</li>
                         </ul>
-                        <img src="assets/images/portfolio6_1.png" alt="results" class="project-house-image6">
+                        <img src="assets/images/portfolio6_1.png" alt="results" class="project-house-image6 thumbnail">
                         <p>Celem ćwieczenia było rozwinięcie umiejętności w budowie kreatywnych funkcji oraz przede wszystkim zapoznanie się z zaawansowanymi technikami regresji. Finalnie przy wykorzystaniu najlepszego modelu przewidzieć cenę domu mieszkalnego.</p>
                         <p>Opracowałem wiele modeli regresji, zarówno ich podstawowe wersje oraz wersje z wyszukanimy hiperparametrami. Najlepszym modelem okazał się <span>ElasticNet z hiperparametrami</span>, który uzyskał RMSE na poziomie <span>0.1169</span> oraz R-Squered na poziomie <span>0.915.</span></p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -757,8 +770,8 @@
                         <p>Katastrofa Titanica stała się tematem wielu badań, również w analizie danych czy machine learningu.</p>
                         <p class="paragraf-header">Opis danych użytych w projekcie:</p>
                         <p>Ten projekt jest związany z konkursem "Titanic: Machine Learning from Disaster" na platformie Kaggle. Jest jednym z najpopularniejszych i najczęściej polecanych projektów dla początkujących data scientistów i analityków danych. W ramach tego konkursu uczestnicy mają za zadanie przewidzieć, którzy pasażerowie Titanica przeżyli katastrofę, a którzy niestety nie, na podstawie dostarczonych danych.
-                        Zbiór danych użyty w projekcie zawiera 10 zmiennych, które powinny pomóc osiągnąc cel.<a href="https://www.kaggle.com/competitions/titanic/data" target="_blank" rel="noopener noreferrer">Link do danych</a></p>
-                        <img src="assets/images/portfolio7_1.png" alt="results" class="project-titanic-image6">
+                            Zbiór danych użyty w projekcie zawiera 10 zmiennych, które powinny pomóc osiągnąc cel.<a href="https://www.kaggle.com/competitions/titanic/data" target="_blank" rel="noopener noreferrer">Link do danych</a></p>
+                        <img src="assets/images/portfolio7_1.png" alt="results" class="project-titanic-image6 thumbnail">
                         <ul>
                             <p class="list-header">Kluczowe Cechy Zbioru Danych:</p>
                             <li>Pclass (klasa podróży): 1, 2 lub 3.</li>
@@ -772,20 +785,21 @@
                             <li>Cabin (kabina): Wiele brakujących wartości, ale może być użyteczna.</li>
                             <li>Embarked (port zaokrętowania): C, Q, S.</li>
                         </ul>
-                        
+
                         <p class="paragraf-header">Wyniki:</p>
                         <p>Po dogłębnym przeanalizowaniu wszystkich zmiennych oraz po wyczyszczeniu danych przystąpiłem do budowania modeli klasyfikacyjnych. W moim przypadku najlepszym modelem okazął się <span>VotingClassifier</span>. Modele osiągnął wynik cross-validacji na poziomie <span>około 83.6 %</span>.</p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/vectorpouch">vectorpouch</a>z Freepik.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
+           
             <!-- -------------------------------- PROJEKT 6 -------------------------------- -->
 
             <div id="designModal6" class="modal">
@@ -855,7 +869,7 @@
                             </div>
 
                             <div></div>
-                            
+
                             <button class="cv-button-project detail-item-center">
                                 <a href="https://github.com/MateuszWuchnicki/My-own-website" target="_blank" rel="noopener noreferrer">
                                     <p data-key="model_all7">Zobacz projekt</p>
@@ -872,28 +886,27 @@
                         <p data-key="model6_4">Strona jest responsywna. Starałem się przygotować ją tak aby prawidłowo uruchamiała się na każdym urządzeniu. Planuję stale aktualizować wszystkie informacje jakie się tutaj znajdują oraz dodawać nowe projekty, zarówno ukończone jak i w trakcie realizacji.</p>
                         <p data-key="model6_5">Niedawno na stronie pojawiła się nowa funkcjonalność, mianowicie możliwość uruchomienia strony w wersji w języku angielskim. W przyszłości możliwe, że pojawi się nowa pozycja w menu &ndash; <span>Blog</span>, w którym będę umieszczał ciekawe nowinki z branży GIS oraz Data Science czy też popularnego teraz AI.</p>
                         <p data-key="model6_6">Jeśli chcesz się ze mną skontaktować zapraszam do sekcji <span>Kontakt</span>.</p>
-                        
+
                         <div class="project-other-images-project1">
-                            <img src="assets/images/portfolio1_home.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_about.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_resume.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_skills.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_portfolio.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_contact.jpg" alt="" class="image-item-project1">
-                            <img src="assets/images/portfolio1_detail.jpg" alt="" class="image-item-project1">
+                            <img src="assets/images/portfolio1_home.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_about.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_resume.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_skills.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_portfolio.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_contact.jpg" alt="Img" class="image-item-project1 thumbnail">
+                            <img src="assets/images/portfolio1_detail.jpg" alt="Img" class="image-item-project1 thumbnail">
                         </div>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
-            
             <!-- -------------------------------- PROJEKT 7 -------------------------------- -->
             <div id="designModal7" class="modal">
                 <div class="modal-content" id="modal-scroll">
@@ -970,22 +983,21 @@
                     </div>
                     <div class="project-description project-scraping">
                         <h2>Opis projektu</h2>
-                        <img src="assets/images/portfolio10_1.jpg" alt="" class="project-scraping-image10">
+                        <img src="assets/images/portfolio10_1.jpg" alt="" class="project-scraping-image10 thumbnail">
                         <p>Projekt realizowany w ramach utrwalania wiedzy zdobytej w trakcie Bootcampu Data Science PRO. Jest to mały projekt typu web scraping, którego głównym celem było automatyczne pobranie danych przy użyciu języka python oraz biblioteki BeautifulSoup.</p>
                         <p>Z uwagi na moje zainteresowanie dbaniem o własne finanse osobiste oraz inwestowaniem w różne aktywa, w tym kryptowaluty, za cel obrałem stronę internetową &ndash; <a href="https://crypto.com/price/pl" target="_blank" rel="noopener noreferrer">www.crypto.com</a>, która zawiera aktualny kurs wszystkich kryprowalut.</p>
                         <p>Projekt zakładał pobranie danych ze strony dla 500 pierwszych coinów oraz zapisanie ich do arkusza kalkulacyjnego Excel.</p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
-
 
             <!-- -------------------------------- PROJEKT 8 -------------------------------- -->
             <div id="designModal8" class="modal">
@@ -1068,7 +1080,7 @@
                     <div class="project-description project-password">
                         <h2>Opis projektu</h2>
                         <p class="project-password-clear">Generator haseł to jeden z podstawowych projektów, jakie robi się podczas nauki programowania przeróżnych języków. Tak też było w moim przypadku w czasie nauki Pythona.</p>
-                        <img src="assets/images/portfolio11_1.jpg" alt="GUI" class="project-password-image11">
+                        <img src="assets/images/portfolio11_1.jpg" alt="GUI" class="project-password-image11 thumbnail">
                         <p>Aplikacja zakładała, że użytkownik poda kilka informacji:</p>
                         <ul>
                             <li>
@@ -1091,13 +1103,13 @@
                         <p>Nie chciałem aby ten generator był klasycznym projektem jakich wiele. Dlatego postanowiłem utworzyć tez w pythonie do niego proste GUI.</p>
                         <p class="copyright">Zdięcie wykonane przez<a href="https://pl.freepik.com/autor/freepik">freepik</a>z Freepik.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -1198,20 +1210,20 @@
                                 </ul>
                             </li>
                         </ul>
-                        
+
                         <div class="project-other-images-project3">
                             <img src="assets/images/portfolio3_1.jpg" alt="" class="image-item-project3">
                             <img src="assets/images/portfolio3_2.jpg" alt="" class="image-item-project3">
                             <img src="assets/images/portfolio3_3.jpg" alt="" class="image-item-project3">
                         </div>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -1239,7 +1251,7 @@
 
                     <div class="project-details">
                         <div class="project-main-image project-details-item">
-                            <img src="assets/images/portfolio4.jpg" alt="project2">
+                            <img src="assets/images/portfolio4.jpg" alt="project2" class="thumbnail">
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
@@ -1313,22 +1325,22 @@
                             </li>
                         </ul>
                         <div class="project-other-images-project4">
-                            <img src="assets/images/portfolio4_1.jpg" alt="" class="image-item-project4">
-                            <img src="assets/images/portfolio4_2.jpg" alt="" class="image-item-project4">
-                            <img src="assets/images/portfolio4_3.jpg" alt="" class="image-item-project4">
+                            <img src="assets/images/portfolio4_1.jpg" alt="" class="image-item-project4 thumbnail">
+                            <img src="assets/images/portfolio4_2.jpg" alt="" class="image-item-project4 thumbnail">
+                            <img src="assets/images/portfolio4_3.jpg" alt="" class="image-item-project4 thumbnail">
                         </div>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
-<!-- -------------------------------- PROJEKT 11 -------------------------------- -->
+            <!-- -------------------------------- PROJEKT 11 -------------------------------- -->
 
             <div id="designModal11" class="modal">
                 <div class="modal-content" id="modal-scroll">
@@ -1352,7 +1364,7 @@
 
                     <div class="project-details">
                         <div class="project-main-image project-details-item">
-                            <img src="assets/images/portfolio8.png" alt="project8">
+                            <img src="assets/images/portfolio8.png" alt="project8" class="thumbnail">
                         </div>
                         <div class="details-item project-details-item">
                             <div class="details-header detail-item-center">
@@ -1404,21 +1416,19 @@
 
                     <div class="project-description project-logo">
                         <h2>Opis projektu</h2>
-                        <img src="assets/images/portfolio8_1.png" alt="" class="project-logo-image8">
+                        <img src="assets/images/portfolio8_1.png" alt="" class="project-logo-image8 thumbnail">
                         <p>Projekt dotyczył stworzenie nowego Loga oraz wizytówek dla firmy świadczącej usługi geodezyjnej.</p>
                         <p>Logotyp miał zawierać imię i nazwisko osoby prowadzącej jednoosobową działalność gospodarczą oraz jednoznacznie kojarzyć się z geodezją. Dlatego <span>litera A</span> przedstawia instrument geodezyjny - tachimetr, natomiast <span>litera I</span> została wykonana na wzrór łaty geodezyjnej.</p>
                     </div>
-                    
+
                     <div class="scroll-up">
                         <button id="scrollToTopButton" class="scroll-top">
                             <img src="assets/icons/arrow_top.png" alt="ScrollUp" class="hover-image" data-hover="assets/icons/arrow_top_hover.png">
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
-
-
 
             <!-- ------------------------------------------------------------------------------------------------------- -->
             <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -1465,15 +1475,20 @@
                         </div>
                         <div class="about-list">
                             <ul>
-                                <li><p data-key="about1">Imię i nazwisko </p><span>Mateusz Wuchnicki</span>
+                                <li>
+                                    <p data-key="about1">Imię i nazwisko </p><span>Mateusz Wuchnicki</span>
                                 </li>
-                                <li><p data-key="about2">Urodziny </p><span data-key="about3">1 lutego 1994</span>
+                                <li>
+                                    <p data-key="about2">Urodziny </p><span data-key="about3">1 lutego 1994</span>
                                 </li>
-                                <li><p data-key="about4">E-mail </p><span>mateusz.wuchnicki@gmail.com</span>
+                                <li>
+                                    <p data-key="about4">E-mail </p><span>mateusz.wuchnicki@gmail.com</span>
                                 </li>
-                                <li><p data-key="about5">Adres </p><span data-key="about6">Kraków, Polska</span>
+                                <li>
+                                    <p data-key="about5">Adres </p><span data-key="about6">Kraków, Polska</span>
                                 </li>
-                                <li><p data-key="about7">Telefon </p><span>&#43;48 574 270 864</span>
+                                <li>
+                                    <p data-key="about7">Telefon </p><span>&#43;48 574 270 864</span>
                                 </li>
                             </ul>
                         </div>
@@ -1754,7 +1769,7 @@
                                     <h2 data-key="skill2">„Bardzo wierzę w szczęście i uważam, że im ciężej pracuję, tym więcej go mam.”</h2>
                                 </li>
                                 <li>
-                                    <p >&ndash; Thomas Jefferson</p>
+                                    <p>&ndash; Thomas Jefferson</p>
                                 </li>
                             </ul>
                         </div>
@@ -2192,13 +2207,13 @@
                     <div class="subsection-portfolio">
                         <div class="filter-options">
                             <p data-key="portfolio3">Filtruj:</p>
-                            
-                            
-                            
+
+
+
                             <button onclick="filterElement('all')" data-category="all" data-key="portfolio4">Wszystkie<span class="category-count">11</span></button>
-                            
-                            
-                            
+
+
+
                             <button onclick="filterElement('data')" data-category="data">Data Science<span class="category-count">4</span></button>
                             <button onclick="filterElement('gis')" data-category="gis" data-key="portfolio5">Projekty GIS<span class="category-count">1</span></button>
                             <button onclick="filterElement('python')" data-category="python">Python<span class="category-count">2</span></button>
@@ -2289,7 +2304,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="portfolio-item website">
                                 <img src="assets/images/portfolio1.jpg" alt="Strony WWW 1">
                                 <div class="title-and-button">
@@ -2305,7 +2320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="portfolio-item python">
                                 <img src="assets/images/portfolio10.jpg" alt="Python">
                                 <div class="title-and-button">
@@ -2338,7 +2353,7 @@
                                 </div>
                             </div>
 
-                            
+
                             <div class="portfolio-item graphic">
                                 <img src="assets/images/portfolio3.jpg" alt="Projekty graficzne 1">
                                 <div class="title-and-button">
@@ -2370,7 +2385,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="portfolio-item graphic">
                                 <img src="assets/images/portfolio8.png" alt="Projekty graficzne 2">
                                 <div class="title-and-button">
@@ -2387,8 +2402,8 @@
                                 </div>
                             </div>
 
-                            
-                            
+
+
 
                         </div>
                     </div>
@@ -2620,11 +2635,13 @@
     <script src="assets/scripts/language.js"></script>
     <script src="assets/scripts/language2.js"></script>
 
-    <!-- Link to the external JavaScript file -->
+    <!-- Scroll in Modal -->
     <script src="assets/scripts/scroll_modal.js"></script>
+
+    <!-- Larger images in Modal -->
+    <script src="assets/scripts/larger_size_image2.js"></script>
+
 
 </body>
 
 </html>
-
-
