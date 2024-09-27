@@ -4076,7 +4076,28 @@ form {
     }
 
     /* ---------------------------------------  Portfolio  --------------------------------------- */
+    
+    .content-modal1 {
+        width: 90%;
+        height: auto;
+    }
+    
+    .close-image {
+        top: 10px;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .modal-image-content {
+        padding: 60px 25px 25px;
+    }
+    
+    .larger-image {
+        max-height: 80vh;
+    }
 
+    
     .portfolio-list {
         gap: 30px;
     }
@@ -4606,6 +4627,18 @@ form {
     }
 
     /* ---------------------------------------  Portfolio  --------------------------------------- */
+    
+    .close-image {
+        top: 10px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .modal-image-content {
+        padding: 45px 20px 20px;
+    }
+
     .content-portfolio {
         gap: 30px;
     }
