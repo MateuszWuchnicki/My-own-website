@@ -1285,22 +1285,22 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 15px;
-    justify-items: center;
 }
 
 .portfolio-item {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 20px;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: 250px 100px; 
+    grid-template-columns: auto;
+
 }
 
 .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 20px;
     padding: 10px;
     object-fit: cover;
@@ -1338,9 +1338,9 @@ h1 {
 .title-and-button {
     display: grid;
     align-items: center;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 70% 30%;
     width: 100%;
-    margin: 5px 0 15px;
+    margin: 0;
     padding: 0 20px;
 }
 
@@ -1881,7 +1881,7 @@ h1 {
 
 .project-wedding p {
     text-align: justify;
-    margin: 15px 0 0 0;
+    margin: 0;
 }
 
 .project-wedding p span {
@@ -1904,6 +1904,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .project-wedding .project-wedding-list li a {
@@ -1917,6 +1918,7 @@ h1 {
     font-weight: normal;
     border: none;
     padding: 5px;
+    text-align: center;
 }
 
 
@@ -2684,7 +2686,7 @@ form {
     /* ---------------------------------------  *  --------------------------------------- */
 
     .container {
-        padding: 80px 100px 60px;
+        padding: 80px 80px 60px;
     }
 
     .section {
@@ -2706,8 +2708,8 @@ form {
     }
 
     .social-links {
-        left: 100px;
-        width: calc(100% - 200px);
+        left: 80px;
+        width: calc(100% - 160px);
     }
 
     .social-links > :last-child {
@@ -2968,14 +2970,6 @@ form {
         font-size: 0.8em;
     }
 
-    .portfolio-item img {
-        padding: 20px;
-    }
-
-    .portfolio-list {
-        gap: 20px;
-    }
-
     .title-and-button {
         padding: 0 20px;
     }
@@ -2983,6 +2977,10 @@ form {
     .title-and-button .portfolio-button button {
         height: 35px;
         font-size: 0.6em;
+    }
+    
+    .portfolio-item {
+        grid-template-rows: 200px 80px; 
     }
 
     .portfolio-info-text h1 {
@@ -3153,14 +3151,19 @@ form {
 }
 
 
+
+
+
+
+
 @media (max-width: 1250px) {
     .container {
-        padding: 80px 80px 60px;
+        padding: 80px 60px 60px;
     }
 
     .social-links {
-        left: 80px;
-        width: calc(100% - 160px);
+        left: 60px;
+        width: calc(100% - 120px);
         gap: 10px;
     }
 
@@ -3312,9 +3315,9 @@ form {
     .category-count {
         font-size: 0.8em;
     }
-
-    .portfolio-item img {
-        padding: 10px;
+    
+    .portfolio-item {
+        grid-template-rows: 180px 70px;
     }
 
     .title-and-button {
@@ -3537,6 +3540,8 @@ form {
     }
 
 }
+
+
 
 
 
@@ -3838,6 +3843,10 @@ form {
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .portfolio-item {
+        grid-template-rows: 250px 100px;
+    }
 
     .portfolio-info-text h1 {
         font-size: 1em;
@@ -3849,6 +3858,11 @@ form {
 
     .cv-button {
         padding: 10px 20px;
+    }
+    
+    .title-and-button .portfolio-button button {
+        height: 35px;
+        font-size: 0.6em;
     }
 
 
@@ -4104,6 +4118,7 @@ form {
 
     .portfolio-item {
         grid-column: 1 / -1;
+        grid-template-rows: 350px 100px;
     }
 
     .portfolio-info-text h1 {
@@ -4113,9 +4128,9 @@ form {
     .portfolio-info-text h2 {
         font-size: 1em;
     }
-
+    
     .title-and-button {
-        grid-template-columns: 2fr 1fr;
+        padding: 0 20px;
     }
 
     .title-and-button .portfolio-button button {
@@ -4649,6 +4664,7 @@ form {
 
     .portfolio-item {
         grid-column: 1 / -1;
+        grid-template-rows: 250px 80px;
     }
 
     .portfolio-info-text h1 {
@@ -4660,7 +4676,7 @@ form {
     }
 
     .title-and-button {
-        grid-template-columns: 1fr 45px;
+        grid-template-columns: 85% 15%;
     }
 
     .title-and-button .portfolio-button button {
